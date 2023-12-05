@@ -2,27 +2,35 @@
 title: Maxime Sauvaget
 ---
 ###### [ [Github](https://www.github.com/maximesauvaget) ] - [ sauvaget.maxime@gmail.com ]
-#### Ingénieur logiciel / web backend / API / tools / infratructure
+#### Ingénieur logiciel / Web backend / API / Tools / Infratructure
 
 ## Compétences
 ```Analyse fonctionnelle```
 ```Conception technique```
 ```Autonomie```
 
-**Langages**: C#, TypeScript
-**.net**: API, ASP, microservices
-**Conteneurs**: Docker, compose, dockerfile
-**Outils**: Git, Azure Devops, Azure, Sonar
+```Langages```   C#, TypeScript <br>
+```.net```       API, ASP, microservices<br>
+```Conteneurs``` Docker, compose, dockerfile<br>
+```Outils```     Git, Azure Devops, Azure, Sonar<br>
 
 ## Expériences
 ### Sport Découverte | 🗺️ *La Ciotat (remote)*
 ##### Développeur fullstack, Mars 2022 - Janvier 2024
-- 
-- 2
-- 3
+> Plateforme de réservation d’activités sportives et de loisirs en ligne
+- Conception et développement d'un service générique d'interfaçage entre le système de réservation interne et les acteurs du marché (channel manager et APIs).
+- Développement des microservices et APIs
+- Maintenance et évolution du back office
+- Outillage DevOps et administration des serveurs
 
-### General Electric | 🗺️ *Montpellier*
+> **APIs**<br> ```C#``` ```MassTransit``` ```RabbitMQ``` ```EF``` <br>
+> **BackOffice**<br> ```ASP``` ```VueJs``` <br>
+> **CI/CD**<br> ```Azure DevOps``` ```Sonar``` ```BrowserStack``` <br>
+
+
+### General Electric (Grid Solutions) | 🗺️ *Montpellier*
 ##### Ingénieur logiciel R&D, Juillet 2019 - Février 2022
+> Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie
 - 1
 - 2
 - 3
