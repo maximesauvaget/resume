@@ -58,9 +58,7 @@ Outils <br>
 ##### Programmeur outils, Septembre 2017 - Mars 2019
 > Programmeur outils sur la production de Beyond Good & Evil 2
 
-- Développement 
-- 2
-- 3
+Développement d'interfaces à destination des métiers de la production : éditeur d'objet, éditeur d'animation
 
 ```C#``` ```WPF``` ```LUA``` ```C++``` ```git``` ```Perforce``` ```Wwise```
 
