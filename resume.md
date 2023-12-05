@@ -36,13 +36,13 @@ title: Maxime Sauvaget
 - 2
 - 3
 
-### Créative Atlantique
+### Créative Atlantique (*Meteodyn*)
 #### Nantes
 ##### Ingénieur logiciel
 - 1
 - 2
 
-### Sopra Steria
+### Sopra Steria (*Bouygues Immobilier*)
 #### Nantes
 ##### Ingénieur logiciel
 - 1
@@ -51,8 +51,8 @@ title: Maxime Sauvaget
 ### Syd Conseil
 #### Nantes
 ##### Développeur ERP *Dynamics AX*
-- 1
-- 2
+- Création de webservices permettant l'interaction entre l'ERP et des équipements industriels via protocoles propriétaires : RS232, C#, WCF
+- Développement de modules métiers spécifiques dans l'ERP : X++
 
 
 ## Formation
