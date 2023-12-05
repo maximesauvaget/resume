@@ -52,6 +52,7 @@ jobs:
     - name: Build Release
       shell: bash
       run: |
+        sudo apt-get update && sudo apt-get install -y hub
         hub release create ${{ steps.current-datetime.outputs.CURRENT_DATETIME }} \
         -m ${{ steps.current-datetime.outputs.CURRENT_DATETIME }} \
         -a out/${{ github.actor }}_resume.html \
