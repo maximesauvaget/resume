@@ -50,7 +50,7 @@ title: Maxime Sauvaget
   
 ### Syd Conseil
 #### Nantes
-##### Ingénieur logiciel
+##### Développeur ERP *Dynamics AX*
 - 1
 - 2
 
