@@ -1,44 +1,60 @@
 ---
-title: Viktor Vaughn
+title: Maxime Sauvaget
 ---
-###### [ [Github](https://www.github.com/siph) ] - [ [Blog](https://www.dev.to/siph) ] - [ v.vaughn@gmail.com ] - [ 814 332 8091 ]
-#### Experienced project manager with a track record of delivering high-quality results on time and within budget.
+###### [ [Github](https://www.github.com/maximesauvaget) ] - [ sauvaget.maxime@gmail.com ]
+#### Ingénieur logiciel / web backend / API / tools / infratructure
 
-## Skills
-```Project management```
-```Team leadership```
-```Budget management```
-```Communication```
-```Problem-solving```
-```Agile methodology```
-```Microsoft Project```
-```JIRA```
-```SQL```
+## Compétences
+```Analyse fonctionnelle```
+```Conception technique```
+```Autonomie```
 
-**Languages**: Java, Kotlin, Rust  
-**Databases**: Redis, Postgres, Neo4j  
-**Tools**: Spring, Kubernetes, Github-Actions, Linux, Nix, Git, Rest, GraphQL
+**Langages**: C#, TypeScript
+**.net**: API, ASP, microservices
+**Conteneurs**: Docker, compose, dockerfile
+**Outils**: Git, Azure Devops, Azure, Sonar
 
-## Experience
-### Jamba Juice
-##### Senior Project Manager, January 2015 - Present
-- Led cross-functional teams in the successful delivery of multiple software projects, including a major website redesign and a mobile app launch.
-- Managed budgets of up to $5 million and ensured projects were delivered on time and within scope.
-- Coordinated communication with stakeholders, including executive leadership and development teams.
+## Expériences
+### Sport Découverte
+#### La Ciotat (remote)
+##### Développeur fullstack, Mars 2022 - Janvier 2024
+- 1
+- 2
+- 3
 
-### PF Chang's
-##### Project Manager, February 2011 - December 2014
-- Managed a portfolio of software and hardware projects, including a new CRM implementation and a network infrastructure upgrade.
-- Worked closely with business analysts and technical teams to ensure project requirements were met and delivered on schedule.
-- Maintained project documentation and provided regular status updates to executive leadership.
+### General Electric
+#### Montpellier
+##### Ingénieur logiciel R&D, Juillet 2019 - Février 2022
+- 1
+- 2
+- 3
+
+### Ubisoft
+#### Montpellier
+##### Programmeur outils, Septembre 2017 - Mars 2019
+- 1
+- 2
+- 3
+
+### Créative Atlantique
+#### Nantes
+##### Ingénieur logiciel
+- 1
+- 2
+
+### Sopra Steria
+#### Nantes
+##### Ingénieur logiciel
+- 1
+- 2
+  
+### Syd Conseil
+#### Nantes
+##### Ingénieur logiciel
+- 1
+- 2
 
 
-## Projects
-**[*resume-md*](http://www.github.com/siph/resume-md)**
-
-Build your resume using markdown and have it generated as a pdf and html.
-
-## Education
-
-### Reno University
-**Degree:** Bachelor of Science in Computer Science | **Years Attended:** 2016-2019 | **City, State:** Reno, NV
+## Formation
+### Supinfo
+**Diplôme:** *Master of Science in Computer Science* | **2007-2012** | **Nantes**
