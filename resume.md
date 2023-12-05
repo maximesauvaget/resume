@@ -7,12 +7,18 @@ title: Maxime Sauvaget
 ## Compétences
 ```Analyse fonctionnelle```
 ```Conception technique```
+```Administration système```
 ```Autonomie```
 
-```Langages```   C#, TypeScript <br>
-```.net```       API, ASP, microservices<br>
-```Conteneurs``` Docker, compose, dockerfile<br>
-```Outils```     Git, Azure Devops, Azure, Sonar<br>
+Langages <br>
+```C#``` ```TypeScript``` <br>
+.net <br>
+```API``` ```MVC``` ```ASP``` ```microservices``` ```Azure``` <br>
+Front <br>
+```VueJs``` ```Angular``` <br>
+Outils <br>
+```docker``` ```compose``` ```dockerfile```
+```git``` ```Azure Devops``` ```Sonar```
 
 ## Expériences
 ### Sport Découverte | 🗺️ *La Ciotat (remote)*
@@ -21,11 +27,13 @@ title: Maxime Sauvaget
 - Conception et développement d'un service générique d'interfaçage entre le système de réservation interne et les acteurs du marché (channel manager et APIs).
 - Développement des microservices et APIs
 - Maintenance et évolution du back office
-- Outillage DevOps et administration des serveurs
+- Génération de la configuration des serveurs par le code et déploiement via CI/CD
+- Administration des serveurs et leurs services
 
-> **APIs**<br> ```C#``` ```MassTransit``` ```RabbitMQ``` ```EF``` <br>
-> **BackOffice**<br> ```ASP``` ```VueJs``` <br>
-> **CI/CD**<br> ```Azure DevOps``` ```Sonar``` ```BrowserStack``` <br>
+**APIs**<br> ```C#``` ```MassTransit``` ```RabbitMQ``` ```EF``` <br>
+**BackOffice**<br> ```ASP``` ```VueJs``` <br>
+**CI/CD**<br> ```Azure DevOps``` ```Sonar``` ```BrowserStack``` <br>
+**Infrastructure**<br> ```linux``` ```docker``` ```nginx``` ```varnish``` 
 
 <hr><br>
 
