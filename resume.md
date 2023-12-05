@@ -39,18 +39,30 @@ Outils <br>
 
 ### General Electric (Grid Solutions) | 🗺️ *Montpellier*
 ##### Ingénieur logiciel R&D, Juillet 2019 - Février 2022
-> Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie
-- 1
-- 2
-- 3
+> Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie. Elaboration, conception et développement d'une plateforme IIoT dédiée à ces équipements.
+
+- Conception d'un DSL permettant la description au runtime d'équipements : description, configuration, communication, actions ...
+- Conception du langage (topics et payloads) MQTT adopté par la plateforme
+- Conception et développement, en équipe, de l'architecture microservices de la plateforme IIoT
+- Conception de la plateforme edge
+- Adaptation d'un service legacy C# de gestion et analyse des perturbations transitoires
+
+**Plateforme (front)**<br> ```NestJS``` ```Angular``` ```CoreUI``` <br>
+**Plateforme (back)**<br> ```NestJS``` ```C#``` ```postgresql``` ```InfluxDB```<br>
+**Plateforme (edge)**<br> ```docker``` ```C``` ```NestJS```<br>
+**Communication**<br> ```gRPC``` ```MQTT```<br>
 
 <hr><br>
 
 ### Ubisoft | 🗺️ *Montpellier*
 ##### Programmeur outils, Septembre 2017 - Mars 2019
-- 1
+> Programmeur outils sur la production de Beyond Good & Evil 2
+
+- Développement 
 - 2
 - 3
+
+```C#``` ```WPF``` ```LUA``` ```C++``` ```git``` ```Perforce``` ```Wwise```
 
 <hr><br>
 
@@ -81,7 +93,6 @@ Analyse, conception et développement du service de gestion des finances
 - Développement de modules métiers spécifiques dans l'ERP
 
 ```x++``` ```C#``` ```WCF``` ```RS232```
-
 
 ## Formation
 ### Supinfo
