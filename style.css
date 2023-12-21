@@ -522,7 +522,7 @@ h1 {
 h2 {
     font-size: 24px;
     border-bottom: 1px solid #ccc;
-    color: #f39
+    color: #333
 }
 
 h3 {
@@ -535,7 +535,6 @@ h3 {
 h4 {
     font-size: 16px;
     color: #333;
-    text-align: center;
     -webkit-margin-before: 0.02em;
     -webkit-margin-after: 0.02em;
 }
@@ -543,7 +542,6 @@ h4 {
 h5 {
     font-size: 14px;
     color: #333;
-    text-align: center
 }
 
 h6 {
