@@ -337,7 +337,7 @@ text-align: center
 h2 {
 font-size: 24px;
 border-bottom: 1px solid #ccc;
-color: #f39
+color: #333
 }
 h3 {
 font-size: 18px;
@@ -348,14 +348,12 @@ color: #333
 h4 {
 font-size: 16px;
 color: #333;
-text-align: center;
 -webkit-margin-before: 0.02em;
 -webkit-margin-after: 0.02em;
 }
 h5 {
 font-size: 14px;
 color: #333;
-text-align: center
 }
 h6 {
 color: #777;
@@ -865,10 +863,10 @@ display: none
 <header id="title-block-header">
 <h1 class="title">Maxime Sauvaget</h1>
 </header>
-<h6 id="github---sauvaget.maximegmail.com">[ <a href="https://www.github.com/maximesauvaget">Github</a> ] - [
+<h3 id="ingénieur-logiciel-web-backend-api-tools-infratructure">Ingénieur
+logiciel / Web backend / API / Tools / Infratructure</h3>
+<h6 id="montpellier---sauvaget.maximegmail.com">[ Montpellier ] - [
 sauvaget.maxime@gmail.com ]</h6>
-<h4 id="ingénieur-logiciel-web-backend-api-tools-infratructure">Ingénieur
-logiciel / Web backend / API / Tools / Infratructure</h4>
 <h2 id="compétences">Compétences</h2>
 <p><code>Analyse fonctionnelle</code> <code>Conception technique</code>
 <code>Administration système</code> <code>Autonomie</code></p>
@@ -879,32 +877,37 @@ logiciel / Web backend / API / Tools / Infratructure</h4>
 <code>docker</code> <code>compose</code> <code>dockerfile</code>
 <code>git</code> <code>Azure Devops</code> <code>Sonar</code></p>
 <h2 id="expériences">Expériences</h2>
-<h3 id="sport-découverte-la-ciotat-remote">Sport Découverte | 🗺️ <em>La
+<h3 id="sport-découverte-la-ciotat-remote">Sport Découverte | <em>La
 Ciotat (remote)</em></h3>
-<h5 id="développeur-fullstack-mars-2022---janvier-2024">Développeur
-fullstack, Mars 2022 - Janvier 2024</h5>
+<h4 id="développeur-fullstack-mars-2022---janvier-2024">Développeur
+fullstack, Mars 2022 - Janvier 2024</h4>
 <blockquote>
 <p>Plateforme de réservation d’activités sportives et de loisirs en
-ligne - Conception et développement d’un service générique d’interfaçage
-entre le système de réservation interne et les acteurs du marché
-(channel manager et APIs). - Développement des microservices et APIs -
-Maintenance et évolution du back office - Génération de la configuration
-des serveurs par le code et déploiement via CI/CD - Administration des
-serveurs et leurs services</p>
+ligne</p>
 </blockquote>
-<p><strong>APIs</strong><br> <code>C#</code> <code>MassTransit</code>
-<code>RabbitMQ</code> <code>EF</code> <br>
+<ul>
+<li>Conception et développement d’un service générique d’interfaçage
+entre le système de réservation interne et les acteurs du marché
+(channel manager et APIs).</li>
+<li>Développement des microservices et APIs</li>
+<li>Maintenance et évolution du back office (front et business)</li>
+<li>Génération de la configuration des serveurs par le code et
+déploiement via CI/CD</li>
+<li>Administration des serveurs linux et leurs services</li>
+</ul>
+<p><strong>APIs</strong><br> <code>.NET 7</code> <code>C#</code>
+<code>MassTransit</code> <code>RabbitMQ</code> <code>EF Core</code> <br>
 <strong>BackOffice</strong><br> <code>ASP</code> <code>VueJs</code> <br>
+<strong>Front</strong><br> <code>ASP</code> <code>React</code> <br>
 <strong>CI/CD</strong><br> <code>Azure DevOps</code> <code>Sonar</code>
 <code>BrowserStack</code> <br> <strong>Infrastructure</strong><br>
 <code>linux</code> <code>docker</code> <code>nginx</code>
 <code>varnish</code></p>
 <hr>
-<p><br></p>
 <h3 id="general-electric-grid-solutions-montpellier">General Electric
-(Grid Solutions) | 🗺️ <em>Montpellier</em></h3>
-<h5 id="ingénieur-logiciel-rd-juillet-2019---février-2022">Ingénieur
-logiciel R&amp;D, Juillet 2019 - Février 2022</h5>
+(Grid Solutions) | <em>Montpellier</em></h3>
+<h4 id="ingénieur-logiciel-rd-juillet-2019---février-2022">Ingénieur
+logiciel R&amp;D, Juillet 2019 - Février 2022</h4>
 <blockquote>
 <p>Division spécialisée dans la conception hardware et software
 d’équipements liés à la distribution et transformation d’énergie.
@@ -913,13 +916,12 @@ ces équipements.</p>
 </blockquote>
 <ul>
 <li>Conception d’un DSL permettant la description au runtime
-d’équipements : description, configuration, communication, actions
-…</li>
+d’équipements : description, configuration, communication, actions</li>
 <li>Conception du langage (topics et payloads) MQTT adopté par la
 plateforme</li>
 <li>Conception et développement, en équipe, de l’architecture
 microservices de la plateforme IIoT</li>
-<li>Conception de la plateforme edge</li>
+<li>Conception de la plateforme edge (conteneur / service C / MQTT)</li>
 <li>Adaptation d’un service legacy C# de gestion et analyse des
 perturbations transitoires</li>
 </ul>
@@ -931,23 +933,25 @@ perturbations transitoires</li>
 <code>NestJS</code><br> <strong>Communication</strong><br>
 <code>gRPC</code> <code>MQTT</code><br></p>
 <hr>
-<p><br></p>
-<h3 id="ubisoft-montpellier">Ubisoft | 🗺️ <em>Montpellier</em></h3>
-<h5 id="programmeur-outils-septembre-2017---mars-2019">Programmeur
-outils, Septembre 2017 - Mars 2019</h5>
+<h3 id="ubisoft-montpellier">Ubisoft | <em>Montpellier</em></h3>
+<h4 id="programmeur-outils-septembre-2017---mars-2019">Programmeur
+outils, Septembre 2017 - Mars 2019</h4>
 <blockquote>
 <p>Programmeur outils sur la production de Beyond Good &amp; Evil 2</p>
 </blockquote>
-<p>Développement d’interfaces à destination des métiers de la production
-: éditeur d’objet, éditeur d’animation</p>
+<ul>
+<li>Développement d’interfaces à destination des métiers de la
+production : éditeur d’objet, éditeur d’animation</li>
+<li>Développement de scripts et macros pour optimiser les pipelines
+d’intégration des données de jeu</li>
+</ul>
 <p><code>C#</code> <code>WPF</code> <code>LUA</code> <code>C++</code>
 <code>git</code> <code>Perforce</code> <code>Wwise</code></p>
 <hr>
-<p><br></p>
-<h3 id="créative-atlantique-nantes">Créative Atlantique | 🗺️
+<h3 id="créative-atlantique-nantes">Créative Atlantique |
 <em>Nantes</em></h3>
-<h5 id="ingénieur-logiciel-juillet-2016---juin-2017">Ingénieur logiciel,
-Juillet 2016 - Juin 2017</h5>
+<h4 id="ingénieur-logiciel-juillet-2016---juin-2017">Ingénieur logiciel,
+Juillet 2016 - Juin 2017</h4>
 <blockquote>
 <p>Mission pour <em>Meteodyn</em>, société experte en ingiénierie du
 vent, de la climatologie et de la météorologie</p>
@@ -956,23 +960,25 @@ vent, de la climatologie et de la météorologie</p>
 simulations d’éoliennes</p>
 <p><code>C#</code> <code>WPF</code> <code>git / gitlab</code></p>
 <hr>
-<p><br></p>
-<h3 id="sopra-steria-nantes">Sopra Steria | 🗺️ <em>Nantes</em></h3>
-<h5 id="ingénieur-logiciel-septembre-2014---juin-2016">Ingénieur
-logiciel, Septembre 2014 - Juin 2016</h5>
+<h3 id="sopra-steria-nantes">Sopra Steria | <em>Nantes</em></h3>
+<h4 id="ingénieur-logiciel-septembre-2014---juin-2016">Ingénieur
+logiciel, Septembre 2014 - Juin 2016</h4>
 <blockquote>
 <p>Conception d’un ERP en architecture orientée service pour
 <em>Bouygues Immobilier</em></p>
 </blockquote>
-<p>Analyse, conception et développement du service de gestion des
-finances</p>
+<ul>
+<li>Analyse, conception et développement du service de gestion des
+finances</li>
+<li>Optimisation des requêtes T-SQL, triggers et procédures
+stockées</li>
+</ul>
 <p><code>C#</code> <code>T-SQL</code> <code>WPF</code>
 <code>Service Bus</code></p>
 <hr>
-<p><br></p>
-<h3 id="syd-conseil-nantes">Syd Conseil | 🗺️ <em>Nantes</em></h3>
-<h5 id="développeur-erp-dynamics-ax-janvier-2013---juillet-2014">Développeur
-ERP <em>Dynamics AX</em>, Janvier 2013 - Juillet 2014</h5>
+<h3 id="syd-conseil-nantes">Syd Conseil | <em>Nantes</em></h3>
+<h4 id="développeur-erp-dynamics-ax-janvier-2013---juillet-2014">Développeur
+ERP <em>Dynamics AX</em>, Janvier 2013 - Juillet 2014</h4>
 <blockquote>
 <p>ESN et intégrateur ERP - Création de webservices permettant
 l’interaction entre l’ERP et des équipements industriels via protocoles
