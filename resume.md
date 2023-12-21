@@ -8,7 +8,7 @@ title: Maxime Sauvaget
 ```Analyse fonctionnelle```
 ```Conception technique```
 ```Administration système```
-```Autonomie```
+```R&D```
 
 Langages <br>
 ```C#``` ```TypeScript``` <br>
@@ -23,7 +23,7 @@ Outils <br>
 ## Expériences
 ### Sport Découverte | *La Ciotat (remote)*
 #### Développeur fullstack, Mars 2022 - Janvier 2024
-> Plateforme de réservation d’activités sportives et de loisirs en ligne
+<pre>Plateforme de réservation d’activités sportives et de loisirs en ligne</pre>
 
 - Conception et développement d'un service générique d'interfaçage entre le système de réservation interne et les acteurs du marché (channel manager et APIs).
 - Développement des microservices et APIs
@@ -31,16 +31,18 @@ Outils <br>
 - Génération de la configuration des serveurs par le code et déploiement via CI/CD
 - Administration des serveurs linux et leurs services
 
-**APIs**<br> ```.NET 7``` ```C#``` ```MassTransit``` ```RabbitMQ``` ```EF Core``` <br>
-**BackOffice**<br> ```ASP``` ```VueJs``` <br>
-**Front**<br> ```ASP``` ```React``` <br>
-**CI/CD**<br> ```Azure DevOps``` ```Sonar``` ```BrowserStack``` <br>
-**Infrastructure**<br> ```linux``` ```docker``` ```nginx``` ```varnish``` 
+APIs : ```.NET 7``` ```C#``` ```MassTransit``` ```RabbitMQ``` ```EF Core``` <br>
+BackOffice : ```ASP``` ```VueJs``` <br>
+Front : ```ASP``` ```React``` <br>
+CI/CD : ```Azure DevOps``` ```Sonar``` ```BrowserStack``` <br>
+Infrastructure : ```linux``` ```docker``` ```nginx``` ```varnish``` 
 
 <hr>
+
 ### General Electric (Grid Solutions) | *Montpellier*
 #### Ingénieur logiciel R&D, Juillet 2019 - Février 2022
-> Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie. Elaboration, conception et développement d'une plateforme IIoT dédiée à ces équipements.
+<pre>Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie. 
+Elaboration, conception et développement d'une plateforme IIoT dédiée à ces équipements.</pre>
 
 - Conception d'un DSL permettant la description au runtime d'équipements : description, configuration, communication, actions
 - Conception du langage (topics et payloads) MQTT adopté par la plateforme
@@ -48,15 +50,16 @@ Outils <br>
 - Conception de la plateforme edge (conteneur / service C / MQTT)
 - Adaptation d'un service legacy C# de gestion et analyse des perturbations transitoires
 
-**Plateforme (front)**<br> ```NestJS``` ```Angular``` ```CoreUI``` <br>
-**Plateforme (back)**<br> ```NestJS``` ```C#``` ```postgresql``` ```InfluxDB```<br>
-**Plateforme (edge)**<br> ```docker``` ```C``` ```NestJS```<br>
-**Communication**<br> ```gRPC``` ```MQTT```<br>
+Plateforme (front) : ```NestJS``` ```Angular``` ```CoreUI``` <br>
+Plateforme (back) : ```NestJS``` ```C#``` ```postgresql``` ```InfluxDB```<br>
+Plateforme (edge) : ```docker``` ```C``` ```NestJS```<br>
+Communication : ```gRPC``` ```MQTT```<br>
 
 <hr>
+
 ### Ubisoft | *Montpellier*
 #### Programmeur outils, Septembre 2017 - Mars 2019
-> Programmeur outils sur la production de Beyond Good & Evil 2
+<pre>Programmeur outils sur la production de Beyond Good & Evil 2</pre>
 
 - Développement d'interfaces à destination des métiers de la production : éditeur d'objet, éditeur d'animation
 - Développement de scripts et macros pour optimiser les pipelines d'intégration des données de jeu
@@ -64,28 +67,31 @@ Outils <br>
 ```C#``` ```WPF``` ```LUA``` ```C++``` ```git``` ```Perforce``` ```Wwise```
 
 <hr>
+
 ### Créative Atlantique | *Nantes*
 #### Ingénieur logiciel, Juillet 2016 - Juin 2017
-> Mission pour *Meteodyn*, société experte en ingiénierie du vent, de la climatologie et de la météorologie
 
-Développeur C# et WPF pour un frontend spécifique aux outils de simulations d'éoliennes
+- Mission pour *Meteodyn*, société experte en ingiénierie du vent, de la climatologie et de la météorologie
+- Développeur C# et WPF pour un frontend spécifique aux outils de simulations d'éoliennes
 
 ```C#``` ```WPF``` ```git / gitlab```
 
 <hr>
+
 ### Sopra Steria | *Nantes*
 #### Ingénieur logiciel, Septembre 2014 - Juin 2016
-> Conception d'un ERP en architecture orientée service pour *Bouygues Immobilier*
 
+- Conception d'un ERP en architecture orientée service pour *Bouygues Immobilier*
 - Analyse, conception et développement du service de gestion des finances
 - Optimisation des requêtes T-SQL, triggers et procédures stockées
 
 ```C#``` ```T-SQL``` ```WPF``` ```Service Bus```
 
 <hr>
+
 ### Syd Conseil | *Nantes*
 #### Développeur ERP *Dynamics AX*, Janvier 2013 - Juillet 2014
-> ESN et intégrateur ERP
+
 - Création de webservices permettant l'interaction entre l'ERP et des équipements industriels via protocoles propriétaires
 - Développement de modules métiers spécifiques dans l'ERP
 
