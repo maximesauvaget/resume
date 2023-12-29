@@ -1,8 +1,8 @@
 ---
 title: Maxime Sauvaget
 ---
+###### [ Montpellier / Remote ] - [ sauvaget.maxime@gmail.com ]
 ### Ingénieur logiciel / Web backend / API / Tools / Infrastructure
-###### [ Montpellier ] - [ sauvaget.maxime@gmail.com ]
 
 ## Compétences
 ```Analyse fonctionnelle```
