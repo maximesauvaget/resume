@@ -10,15 +10,43 @@ title: Maxime Sauvaget
 ```Administration système```
 ```R&D```
 
-Langages <br>
-```C#``` ```TypeScript``` <br>
-.net <br>
-```API``` ```MVC``` ```ASP``` ```microservices``` ```Azure``` <br>
-Front <br>
-```VueJs``` ```Angular``` <br>
-Outils <br>
-```docker``` ```compose``` ```dockerfile```
-```git``` ```Azure Devops``` ```Sonar```
+<table>
+  <tr>
+    <th>Langages</th>
+    <td> 
+      <code>C#</code> 
+      <code>TypeScript</code> 
+      <code>SQL</code>
+    </td>
+  </tr>
+  <tr>
+    <th>.net</th>
+    <td>
+      <code>API</code>
+      <code>MVC</code>
+      <code>ASP</code>
+      <code>microservices</code>
+      <code>Azure</code>
+    </td>
+  </tr>
+  <tr>
+    <th>Front</th>
+    <td>
+      <code>VueJs</code>
+    </td>
+  </tr>
+  <tr>
+    <th>Outils</th>
+    <td>
+      <code>docker</code>
+      <code>compose</code>
+      <code>dockerfile</code>
+      <code>git</code>
+      <code>Azure Devops</code>
+      <code>Sonar</code>
+    </td>
+  </tr>
+</table>
 
 ## Expériences
 ### Sport Découverte | *La Ciotat (remote)*
