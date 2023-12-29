@@ -71,7 +71,7 @@ Communication : ```gRPC``` ```MQTT```<br>
 ### Créative Atlantique | *Nantes*
 #### Ingénieur logiciel, Juillet 2016 - Juin 2017
 
-- Mission pour *Meteodyn*, société experte en ingiénierie du vent, de la climatologie et de la météorologie
+- Mission pour *Meteodyn*, société experte en ingénierie du vent, de la climatologie et de la météorologie
 - Développeur C# et WPF pour un frontend spécifique aux outils de simulations d'éoliennes
 
 ```C#``` ```WPF``` ```git / gitlab```
