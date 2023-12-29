@@ -1,7 +1,7 @@
 ---
 title: Maxime Sauvaget
 ---
-### Ingénieur logiciel / Web backend / API / Tools / Infratructure
+### Ingénieur logiciel / Web backend / API / Tools / Infrastructure
 ###### [ Montpellier ] - [ sauvaget.maxime@gmail.com ]
 
 ## Compétences
