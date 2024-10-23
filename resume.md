@@ -49,7 +49,21 @@ title: Maxime Sauvaget
 </table>
 
 ## Expériences
-### Sport Découverte | *La Ciotat (remote)*
+### SII / Schneider Electric | *Lattes*
+#### Backend R&D , Juin 2024 -
+<pre>Lorem ipsum</pre>
+
+- something
+
+APIs : ```.NET 7``` ```C#``` ```MassTransit``` ```RabbitMQ``` ```EF Core``` <br>
+BackOffice : ```ASP``` ```VueJs``` <br>
+Front : ```ASP``` ```React``` <br>
+CI/CD : ```Azure DevOps``` ```Sonar``` ```BrowserStack``` <br>
+Infrastructure : ```linux``` ```docker``` ```nginx``` ```varnish``` 
+
+<hr>
+
+### Sport Découverte | *La Ciotat*
 #### Développeur fullstack, Mars 2022 - Janvier 2024
 <pre>Plateforme de réservation d’activités sportives et de loisirs en ligne</pre>
 
