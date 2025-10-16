@@ -2,7 +2,7 @@
 title: Maxime Sauvaget
 ---
 ###### [ Montpellier / Remote ] - [ sauvaget.maxime@gmail.com ]
-### Ingénieur logiciel / Web backend / API / Tools / Infrastructure
+### Ingénieur logiciel / web backend / API / Tools / Infrastructure
 
 ## Compétences
 ```Analyse fonctionnelle```
@@ -15,7 +15,8 @@ title: Maxime Sauvaget
     <th>Langages</th>
     <td> 
       <code>C#</code> 
-      <code>TypeScript</code> 
+      <code>TypeScript</code>
+      <code>Shell</code> 
       <code>SQL</code>
     </td>
   </tr>
@@ -26,13 +27,21 @@ title: Maxime Sauvaget
       <code>MVC</code>
       <code>ASP</code>
       <code>microservices</code>
-      <code>Azure</code>
+      <code>EF</code>
+    </td>
+  </tr>
+  <tr>
+    <th>Data</th>
+    <td>
+      <code>Neo4j</code>
+      <code>Janusgraph</code>
+      <code>SQL</code>
     </td>
   </tr>
   <tr>
     <th>Front</th>
     <td>
-      <code>VueJs</code>
+      <code>Angular</code>
     </td>
   </tr>
   <tr>
@@ -49,7 +58,24 @@ title: Maxime Sauvaget
 </table>
 
 ## Expériences
-### Sport Découverte | *La Ciotat (remote)*
+### *SII* pour Schneider Electric | *Lattes*
+#### Développeur backend , Juin 2024 -
+<pre>Conception d'une solution innovante pour la configuration d'équipements électriques. Articulée autour d'applications web, microservices et connecteurs elle a pour vocation d'être le référentiel unique pour le développement de projets clients.</pre>
+
+- R&D sur l'utilisation d'une base de données graphe (neo4j puis Janusgraph) comme seule source de données
+- Transformation du modèle IEC61850 en graphe indexé
+- Définition d'un modèle de graphe pour la configuration par template
+- Développement des services, tests
+
+APIs : ```.NET 8``` ```C#``` ```MassTransit``` ```RabbitMQ```<br>
+Data : ```neo4j``` ```Janusgraph``` <br>
+Front : ```Angular``` ```Figma``` <br>
+CI/CD : ```GitHub``` ```Sonar``` ```BrowserStack``` <br>
+Infrastructure : ```linux``` ```docker``` ```nginx``` 
+
+<hr>
+
+### Sport Découverte | *La Ciotat*
 #### Développeur fullstack, Mars 2022 - Janvier 2024
 <pre>Plateforme de réservation d’activités sportives et de loisirs en ligne</pre>
 
