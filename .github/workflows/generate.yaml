@@ -24,8 +24,9 @@ jobs:
       - name: Prepare output folder
         run: |
           mkdir output
-          cp result/resume/resume.html output/index.html
-          cp result/resume/resume.pdf output/resume.pdf
+          cp index.html output/index.html
+          cp result/resume/resume_en.pdf output/resume_en.pdf
+          cp result/resume/resume_fr.pdf output/resume_fr.pdf
 
       #
       # --- Deployment Logic ---
@@ -45,7 +46,8 @@ jobs:
           BRANCH_NAME="${GITHUB_REF#refs/heads/}"
           mkdir -p deploy/$BRANCH_NAME
           cp output/index.html deploy/$BRANCH_NAME/index.html
-          cp output/resume.pdf deploy/$BRANCH_NAME/resume.pdf
+          cp output/resume_en.pdf deploy/$BRANCH_NAME/resume_en.pdf
+          cp output/resume_fr.pdf deploy/$BRANCH_NAME/resume_fr.pdf
         # Publish the folder
       - name: Publish branch folder
         if: github.ref != 'refs/heads/master'

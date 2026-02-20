@@ -572,7 +572,7 @@ h2 {
 
 h3 {
     font-size: 18px;
-    color: #333
+    color: #333;
     -webkit-margin-before: 0.01em;
     -webkit-margin-after: 0.01em;
 }
@@ -1265,42 +1265,3 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 
   body { color: var(--fg); background: var(--bg); }
   a:hover { text-decoration: underline; }
 }
-
-/* ------------------------------------
-   LANGUAGE TOGGLE (HTML ONLY, NOT PDF)
--------------------------------------*/
-
-.lang-block { display: none; }
-
-/* default language */
-.lang-wrapper #fr { display: block; }
-
-/* toggle logic */
-#fr:target { display: block; }
-#en:target { display: block; }
-
-/* hide the other language when one is targeted */
-:target#fr ~ .lang-block#en { display: none; }
-:target#en ~ .lang-block#fr { display: none; }
-
-/* Language toggle styling */
-.lang-toggle {
-  text-align: right;
-  margin-bottom: 1rem;
-}
-.lang-toggle a {
-  color: var(--accent, #2563eb);
-  text-decoration: none;
-  margin-left: 0.25rem;
-}
-.lang-toggle a:hover {
-  text-decoration: underline;
-}
-
-/* Hide language toggle in PDF */
-@media print {
-  .no-print {
-    display: none !important;
-  }
-}
-
