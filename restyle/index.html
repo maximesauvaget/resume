@@ -939,6 +939,27 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 
 body { color: var(--fg); background: var(--bg); }
 a:hover { text-decoration: underline; }
 }
+
+.lang-section.en { display: none; }
+
+:target ~ .lang-section.fr { display: none; }
+:target ~ .lang-section.en { display: block; }
+
+.lang-toggle {
+text-align: right;
+margin-bottom: 1rem;
+font-size: 0.9rem;
+}
+.lang-toggle a {
+color: var(--accent, #2563eb);
+text-decoration: none;
+margin-left: 0.25rem;
+}
+.lang-toggle a:hover { text-decoration: underline; }
+
+@media print {
+.no-print { display: none; }
+}
 </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
