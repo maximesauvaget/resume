@@ -1266,28 +1266,47 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 
   a:hover { text-decoration: underline; }
 }
 
-/* Default: show FR, hide EN */
-.lang-section.en { display: none; }
+/* ------------------------------------
+   LANGUAGE TOGGLE (HTML ONLY, NOT PDF)
+-------------------------------------*/
 
-/* When #en is active */
-:target ~ .lang-section.fr { display: none; }
-:target ~ .lang-section.en { display: block; }
+/* Hide English by default */
+#en.lang-block { display: none; }
 
-/* Toggle buttons */
+/* When EN is the target */
+#en:target {
+  display: block;
+}
+#en:target ~ #fr {
+  display: none;
+}
+
+/* When FR is the target */
+#fr:target {
+  display: block;
+}
+#fr:target ~ #en {
+  display: none;
+}
+
+/* Language toggle styling */
 .lang-toggle {
   text-align: right;
   margin-bottom: 1rem;
-  font-size: 0.9rem;
 }
 .lang-toggle a {
   color: var(--accent, #2563eb);
   text-decoration: none;
   margin-left: 0.25rem;
 }
-.lang-toggle a:hover { text-decoration: underline; }
+.lang-toggle a:hover {
+  text-decoration: underline;
+}
 
-/* Hide toggle in PDF */
+/* Hide language toggle in PDF */
 @media print {
-  .no-print { display: none; }
+  .no-print {
+    display: none !important;
+  }
 }
 
