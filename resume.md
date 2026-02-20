@@ -1,3 +1,9 @@
+
+<div class="lang-toggle no-print">
+  <a href="#fr">FR</a> | <a href="#en">EN</a>
+</div>
+
+<div id="fr" class="lang-section fr">
 ---
 title: Maxime Sauvaget
 ---
@@ -154,3 +160,10 @@ Communication : ```gRPC``` ```MQTT```<br>
 ## Formation
 ### Supinfo
 **Diplôme:** *Master of Science in Computer Science* | **2007-2012** | **Nantes**
+</div>
+
+
+<div id="en" class="lang-section en">
+TO BE COMPLETED
+</div>
+
