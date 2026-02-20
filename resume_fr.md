@@ -60,8 +60,8 @@ lang: fr
 </table>
 
 ## Expériences
-### *SII* pour Schneider Electric | *Lattes*
-#### Développeur backend , Juin 2024 -
+### <span class="org">SII pour Schneider Electric</span><span class="meta">Lattes</span>
+#### Développeur backend · Juin 2024 – présent
 <pre>Conception d'une solution innovante pour la configuration d'équipements électriques. Articulée autour d'applications web, microservices et connecteurs elle a pour vocation d'être le référentiel unique pour le développement de projets clients.</pre>
 
 - R&D sur l'utilisation d'une base de données graphe (neo4j puis Janusgraph) comme seule source de données
@@ -77,8 +77,8 @@ Infrastructure : ```linux``` ```docker``` ```nginx```
 
 <hr>
 
-### Sport Découverte | *La Ciotat*
-#### Développeur fullstack, Mars 2022 - Janvier 2024
+### <span class="org">Sport Découverte</span><span class="meta">La Ciotat</span>
+#### Développeur fullstack · Mars 2022 – Janvier 2024
 <pre>Plateforme de réservation d'activités sportives et de loisirs en ligne</pre>
 
 - Conception et développement d'un service générique d'interfaçage entre le système de réservation interne et les acteurs du marché (channel manager et APIs).
@@ -95,8 +95,8 @@ Infrastructure : ```linux``` ```docker``` ```nginx``` ```varnish```
 
 <hr>
 
-### General Electric (Grid Solutions) | *Montpellier*
-#### Ingénieur logiciel R&D, Juillet 2019 - Février 2022
+### <span class="org">General Electric — Grid Solutions</span><span class="meta">Montpellier</span>
+#### Ingénieur logiciel R&D · Juillet 2019 – Février 2022
 <pre>Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie.
 Elaboration, conception et développement d'une plateforme IIoT dédiée à ces équipements.</pre>
 
@@ -113,8 +113,8 @@ Communication : ```gRPC``` ```MQTT```<br>
 
 <hr>
 
-### Ubisoft | *Montpellier*
-#### Programmeur outils, Septembre 2017 - Mars 2019
+### <span class="org">Ubisoft</span><span class="meta">Montpellier</span>
+#### Programmeur outils · Septembre 2017 – Mars 2019
 <pre>Programmeur outils sur la production de Beyond Good & Evil 2</pre>
 
 - Développement d'interfaces à destination des métiers de la production : éditeur d'objet, éditeur d'animation
@@ -124,8 +124,8 @@ Communication : ```gRPC``` ```MQTT```<br>
 
 <hr>
 
-### Créative Atlantique | *Nantes*
-#### Ingénieur logiciel, Juillet 2016 - Juin 2017
+### <span class="org">Créative Atlantique</span><span class="meta">Nantes</span>
+#### Ingénieur logiciel · Juillet 2016 – Juin 2017
 
 - Mission pour *Meteodyn*, société experte en ingénierie du vent, de la climatologie et de la météorologie
 - Développeur C# et WPF pour un frontend spécifique aux outils de simulations d'éoliennes
@@ -134,8 +134,8 @@ Communication : ```gRPC``` ```MQTT```<br>
 
 <hr>
 
-### Sopra Steria | *Nantes*
-#### Ingénieur logiciel, Septembre 2014 - Juin 2016
+### <span class="org">Sopra Steria</span><span class="meta">Nantes</span>
+#### Ingénieur logiciel · Septembre 2014 – Juin 2016
 
 - Conception d'un ERP en architecture orientée service pour *Bouygues Immobilier*
 - Analyse, conception et développement du service de gestion des finances
@@ -145,8 +145,8 @@ Communication : ```gRPC``` ```MQTT```<br>
 
 <hr>
 
-### Syd Conseil | *Nantes*
-#### Développeur ERP *Dynamics AX*, Janvier 2013 - Juillet 2014
+### <span class="org">Syd Conseil</span><span class="meta">Nantes</span>
+#### Développeur ERP Dynamics AX · Janvier 2013 – Juillet 2014
 
 - Création de webservices permettant l'interaction entre l'ERP et des équipements industriels via protocoles propriétaires
 - Développement de modules métiers spécifiques dans l'ERP
