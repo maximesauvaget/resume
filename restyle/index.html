@@ -940,22 +940,15 @@ body { color: var(--fg); background: var(--bg); }
 a:hover { text-decoration: underline; }
 }
 
+.lang-block { display: none; }
 
-#en.lang-block { display: none; }
+.lang-wrapper #fr { display: block; }
 
-#en:target {
-display: block;
-}
-#en:target ~ #fr {
-display: none;
-}
+#fr:target { display: block; }
+#en:target { display: block; }
 
-#fr:target {
-display: block;
-}
-#fr:target ~ #en {
-display: none;
-}
+:target#fr ~ .lang-block#en { display: none; }
+:target#en ~ .lang-block#fr { display: none; }
 
 .lang-toggle {
 text-align: right;
