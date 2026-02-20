@@ -21,17 +21,19 @@ jobs:
       - name: Build resume
         run: nix build
 
-      - name: Prepare output folder
+      - name: Prepare output folder for deployment
         run: |
           mkdir output
           cp index.html output/index.html
+          cp result/resume/resume_en.html output/resume_en.html
+          cp result/resume/resume_fr.html output/resume_fr.html
           cp result/resume/resume_en.pdf output/resume_en.pdf
           cp result/resume/resume_fr.pdf output/resume_fr.pdf
 
       #
       # --- Deployment Logic ---
       #
-      - name: Deploy master to root (/) as index.html
+      - name: Deploy master to root of gh-pages
         if: github.ref == 'refs/heads/master'
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -40,12 +42,14 @@ jobs:
           publish_dir: output
           keep_files: true    # DO NOT delete other branch folders
 
-      - name: Deploy other branches to /<branch>/index.html
+      - name: Deploy other branches to branch folders (e.g., /feature-branch/index.html)
         if: github.ref != 'refs/heads/master'
         run: |
           BRANCH_NAME="${GITHUB_REF#refs/heads/}"
           mkdir -p deploy/$BRANCH_NAME
           cp output/index.html deploy/$BRANCH_NAME/index.html
+          cp output/resume_en.html deploy/$BRANCH_NAME/resume_en.html
+          cp output/resume_fr.html deploy/$BRANCH_NAME/resume_fr.html
           cp output/resume_en.pdf deploy/$BRANCH_NAME/resume_en.pdf
           cp output/resume_fr.pdf deploy/$BRANCH_NAME/resume_fr.pdf
         # Publish the folder
