@@ -1255,12 +1255,12 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 
 /* ---------- Dark mode (system) ---------- */
 @media (prefers-color-scheme: dark) {
   :root {
-    --fg: #e5e7eb;          /* slate-200 */
-    --muted: #94a3b8;       /* slate-400 */
-    --bg: #0b1020;          /* near-navy */
-    --bg-alt: #0f172a;      /* slate-900 */
-    --accent: #60a5fa;      /* blue-400 */
-    --border: #1f2937;      /* slate-800 */
+    --fg: #e6edf3;          /* github-dark primary text */
+    --muted: #7d8590;       /* github-dark secondary text */
+    --bg: #0d1117;          /* github-dark canvas */
+    --bg-alt: #161b22;      /* github-dark surface */
+    --accent: #58a6ff;      /* github-dark blue */
+    --border: #30363d;      /* github-dark border */
   }
 
   /* Override legacy hardcoded colors */
@@ -1295,3 +1295,61 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
 }
+
+/* ---------- Smooth theme transition ---------- */
+body, h1, h2, h3, h4, h5, h6,
+code, tt, pre, table, blockquote, hr {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* ---------- Explicit theme (JS toggle wins over system pref) ---------- */
+html[data-theme="dark"] {
+  --fg: #e6edf3; --muted: #7d8590; --bg: #0d1117;
+  --bg-alt: #161b22; --accent: #58a6ff; --border: #30363d;
+}
+html[data-theme="dark"] body  { color: var(--fg); background: var(--bg); }
+html[data-theme="dark"] h1   { color: var(--fg); }
+html[data-theme="dark"] h2   { color: var(--fg); border-bottom-color: var(--border); }
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5   { color: var(--fg); }
+html[data-theme="dark"] h6   { color: var(--muted); }
+html[data-theme="dark"] blockquote { border-left-color: var(--border); color: var(--muted); }
+html[data-theme="dark"] hr   { background: none; border-top: 1px solid var(--border); }
+html[data-theme="dark"] table th  { border-color: var(--border); }
+html[data-theme="dark"] table td  { border-color: var(--border); }
+html[data-theme="dark"] table tr  { border-top-color: var(--border); background-color: var(--bg); }
+html[data-theme="dark"] table tr:nth-child(2n) { background-color: var(--bg-alt); }
+html[data-theme="dark"] code, html[data-theme="dark"] tt {
+  background-color: var(--bg-alt); border-color: var(--border); color: var(--fg);
+}
+html[data-theme="dark"] pre,
+html[data-theme="dark"] .highlight pre {
+  background-color: var(--bg-alt); border-color: var(--border); color: var(--fg);
+}
+html[data-theme="dark"] a { color: var(--accent); }
+
+html[data-theme="light"] {
+  --fg: #0f172a; --muted: #475569; --bg: #ffffff;
+  --bg-alt: #f8fafc; --accent: #2563eb; --border: #e2e8f0;
+}
+html[data-theme="light"] body  { color: var(--fg); background: var(--bg); }
+html[data-theme="light"] h1   { color: #000; }
+html[data-theme="light"] h2   { color: #333; border-bottom-color: #ccc; }
+html[data-theme="light"] h3,
+html[data-theme="light"] h4,
+html[data-theme="light"] h5   { color: #333; }
+html[data-theme="light"] h6   { color: #777; }
+html[data-theme="light"] blockquote { border-left-color: #ddd; color: #777; }
+html[data-theme="light"] table th  { border-color: #ccc; }
+html[data-theme="light"] table td  { border-color: #ccc; }
+html[data-theme="light"] table tr  { border-top-color: #ccc; background-color: #fff; }
+html[data-theme="light"] table tr:nth-child(2n) { background-color: #f8f8f8; }
+html[data-theme="light"] code, html[data-theme="light"] tt {
+  background-color: #f8f8f8; border-color: #eaeaea; color: #333;
+}
+html[data-theme="light"] pre,
+html[data-theme="light"] .highlight pre {
+  background-color: #f8f8f8; border-color: #ccc;
+}
+html[data-theme="light"] a { color: var(--accent); }

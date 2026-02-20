@@ -156,3 +156,18 @@ Communication : ```gRPC``` ```MQTT```<br>
 ## Formation
 ### Supinfo
 **Diplôme:** *Master of Science in Computer Science* | **2007-2012** | **Nantes**
+
+<script>
+(function () {
+  function applyTheme(t) {
+    if (t === 'dark' || t === 'light')
+      document.documentElement.setAttribute('data-theme', t);
+  }
+  // Apply stored theme before first paint
+  try { applyTheme(localStorage.getItem('resume-theme')); } catch (e) {}
+  // Listen for updates from the shell page
+  window.addEventListener('message', function (e) {
+    if (e.data && e.data.type === 'resume-theme') applyTheme(e.data.theme);
+  });
+})();
+</script>
