@@ -3,7 +3,7 @@
   <a href="#fr">FR</a> | <a href="#en">EN</a>
 </div>
 
-<div id="fr" class="lang-section fr">
+<div id="fr" class="lang-block">
 ---
 title: Maxime Sauvaget
 ---
@@ -163,7 +163,7 @@ Communication : ```gRPC``` ```MQTT```<br>
 </div>
 
 
-<div id="en" class="lang-section en">
+<div id="en" class="lang-block">
 TO BE COMPLETED
 </div>
 
