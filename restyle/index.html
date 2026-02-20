@@ -940,25 +940,40 @@ body { color: var(--fg); background: var(--bg); }
 a:hover { text-decoration: underline; }
 }
 
-.lang-section.en { display: none; }
 
-:target ~ .lang-section.fr { display: none; }
-:target ~ .lang-section.en { display: block; }
+#en.lang-block { display: none; }
+
+#en:target {
+display: block;
+}
+#en:target ~ #fr {
+display: none;
+}
+
+#fr:target {
+display: block;
+}
+#fr:target ~ #en {
+display: none;
+}
 
 .lang-toggle {
 text-align: right;
 margin-bottom: 1rem;
-font-size: 0.9rem;
 }
 .lang-toggle a {
 color: var(--accent, #2563eb);
 text-decoration: none;
 margin-left: 0.25rem;
 }
-.lang-toggle a:hover { text-decoration: underline; }
+.lang-toggle a:hover {
+text-decoration: underline;
+}
 
 @media print {
-.no-print { display: none; }
+.no-print {
+display: none !important;
+}
 }
 </style>
   <!--[if lt IE 9]>
