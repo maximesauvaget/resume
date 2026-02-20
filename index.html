@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maxime Sauvaget — CV</title>
+  <style>
+    /* ── Design tokens (mirrors style.css) ─────────────────────────── */
+    :root {
+      --fg:      #0f172a;
+      --muted:   #475569;
+      --bg:      #ffffff;
+      --bg-alt:  #f8fafc;
+      --accent:  #2563eb;
+      --border:  #e2e8f0;
+      --header-h: 56px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg:     #e5e7eb;
+        --muted:  #94a3b8;
+        --bg:     #0b1020;
+        --bg-alt: #0f172a;
+        --accent: #60a5fa;
+        --border: #1e293b;
+      }
+    }
+
+    /* ── Reset / base ───────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter,
+                   Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+    }
+
+    /* ── Header ─────────────────────────────────────────────────────── */
+    header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: var(--header-h);
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      z-index: 100;
+    }
+
+    .site-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ── Language toggle ─────────────────────────────────────────────── */
+    .lang-toggle {
+      display: flex;
+      gap: 0.25rem;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.25rem;
+    }
+
+    .lang-toggle button {
+      appearance: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      padding: 0.3rem 0.85rem;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .lang-toggle button:hover {
+      color: var(--fg);
+    }
+
+    .lang-toggle button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* ── Download button ─────────────────────────────────────────────── */
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--accent);
+      background: transparent;
+      color: var(--accent);
+      font: inherit;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+    }
+
+    .btn-download:hover {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 2px 10px color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+
+    .btn-download svg {
+      flex-shrink: 0;
+    }
+
+    /* ── Resume iframe ───────────────────────────────────────────────── */
+    #resume-frame {
+      display: block;
+      position: fixed;
+      inset: var(--header-h) 0 0 0;
+      width: 100%;
+      height: calc(100% - var(--header-h));
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="site-title">Maxime Sauvaget — CV</span>
+
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <a id="btn-download" class="btn-download" href="resume_fr.pdf" download>
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M7.5 1v9m0 0L4.5 7m3 3 3-3M2 13h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        PDF
+      </a>
+
+      <nav class="lang-toggle" aria-label="Language toggle">
+        <button id="btn-fr" class="active" onclick="setLang('fr')">FR</button>
+        <button id="btn-en"               onclick="setLang('en')">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <iframe
+    id="resume-frame"
+    src="resume_fr.html"
+    title="Resume"
+  ></iframe>
+
+  <script>
+    const pages = { fr: 'resume_fr.html', en: 'resume_en.html' };
+    const pdfs  = { fr: 'resume_fr.pdf',  en: 'resume_en.pdf'  };
+
+    function setLang(lang) {
+      document.getElementById('resume-frame').src = pages[lang];
+      document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-download').href = pdfs[lang];
+      document.documentElement.lang = lang;
+    }
+
+    // Restore last choice from session
+    const saved = sessionStorage.getItem('resume-lang');
+    if (saved && saved !== 'fr') setLang(saved);
+
+    document.querySelectorAll('.lang-toggle button').forEach(btn => {
+      btn.addEventListener('click', () =>
+        sessionStorage.setItem('resume-lang', btn.id.replace('btn-', ''))
+      );
+    });
+  </script>
+</body>
+</html>

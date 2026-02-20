@@ -1,13 +1,8 @@
-
-<div class="lang-toggle no-print">
-  <a href="#fr">FR</a> | <a href="#en">EN</a>
-</div>
-
-<div class="lang-wrapper">
-<div id="fr" class="lang-block">
 ---
 title: Maxime Sauvaget
+lang: fr
 ---
+
 ###### [ Montpellier / Remote ] - [ sauvaget.maxime@gmail.com ]
 ### Ingénieur logiciel / web backend / API / Tools / Infrastructure
 
@@ -20,10 +15,10 @@ title: Maxime Sauvaget
 <table>
   <tr>
     <th>Langages</th>
-    <td> 
-      <code>C#</code> 
+    <td>
+      <code>C#</code>
       <code>TypeScript</code>
-      <code>Shell</code> 
+      <code>Shell</code>
       <code>SQL</code>
     </td>
   </tr>
@@ -78,13 +73,13 @@ APIs : ```.NET 8``` ```C#``` ```MassTransit``` ```RabbitMQ```<br>
 Data : ```neo4j``` ```Janusgraph``` <br>
 Front : ```Angular``` ```Figma``` <br>
 CI/CD : ```GitHub``` ```Sonar``` ```BrowserStack``` <br>
-Infrastructure : ```linux``` ```docker``` ```nginx``` 
+Infrastructure : ```linux``` ```docker``` ```nginx```
 
 <hr>
 
 ### Sport Découverte | *La Ciotat*
 #### Développeur fullstack, Mars 2022 - Janvier 2024
-<pre>Plateforme de réservation d’activités sportives et de loisirs en ligne</pre>
+<pre>Plateforme de réservation d'activités sportives et de loisirs en ligne</pre>
 
 - Conception et développement d'un service générique d'interfaçage entre le système de réservation interne et les acteurs du marché (channel manager et APIs).
 - Développement des microservices et APIs
@@ -96,13 +91,13 @@ APIs : ```.NET 7``` ```C#``` ```MassTransit``` ```RabbitMQ``` ```EF Core``` <br>
 BackOffice : ```ASP``` ```VueJs``` <br>
 Front : ```ASP``` ```React``` <br>
 CI/CD : ```Azure DevOps``` ```Sonar``` ```BrowserStack``` <br>
-Infrastructure : ```linux``` ```docker``` ```nginx``` ```varnish``` 
+Infrastructure : ```linux``` ```docker``` ```nginx``` ```varnish```
 
 <hr>
 
 ### General Electric (Grid Solutions) | *Montpellier*
 #### Ingénieur logiciel R&D, Juillet 2019 - Février 2022
-<pre>Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie. 
+<pre>Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie.
 Elaboration, conception et développement d'une plateforme IIoT dédiée à ces équipements.</pre>
 
 - Conception d'un DSL permettant la description au runtime d'équipements : description, configuration, communication, actions
@@ -161,10 +156,3 @@ Communication : ```gRPC``` ```MQTT```<br>
 ## Formation
 ### Supinfo
 **Diplôme:** *Master of Science in Computer Science* | **2007-2012** | **Nantes**
-</div>
-
-
-<div id="en" class="lang-block">
-TO BE COMPLETED
-</div>
-</div>

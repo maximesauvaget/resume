@@ -23,14 +23,23 @@
         ];
 
         buildPhase = ''
-          pandoc resume.md \
+          pandoc resume_fr.md \
           -t html -f markdown \
           -c style.css --self-contained \
-          -o resume.html
+          -o resume_fr.html
+
+          pandoc resume_en.md \
+          -t html -f markdown \
+          -c style.css --self-contained \
+          -o resume_en.html
 
           wkhtmltopdf --enable-local-file-access \
-          resume.html \
-          resume.pdf
+          resume_fr.html \
+          resume_fr.pdf
+
+          wkhtmltopdf --enable-local-file-access \
+          resume_en.html \
+          resume_en.pdf
         '';
 
       in with pkgs; {
@@ -42,7 +51,9 @@
             src = ./.;
             installPhase = ''
               mkdir -p $out/resume
-              cp resume.* $out/resume/
+              cp index.html $out/resume/
+              cp resume_fr.html resume_en.html $out/resume/
+              cp resume_fr.pdf  resume_en.pdf  $out/resume/
             '';
           };
         };
