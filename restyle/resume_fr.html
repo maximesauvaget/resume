@@ -926,7 +926,7 @@ white-space: nowrap;
 
 hr { border: 0; border-top: 1px solid var(--border); margin: 1.25rem 0; }
 code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-* ---------- Dark mode (system) ---------- */
+
 @media (prefers-color-scheme: dark) {
 :root {
 --fg: #e5e7eb; 
@@ -936,7 +936,29 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 
 --accent: #60a5fa; 
 --border: #1f2937; 
 }
+
 body { color: var(--fg); background: var(--bg); }
+h1 { color: var(--fg); }
+h2 { color: var(--fg); border-bottom-color: var(--border); }
+h3, h4, h5 { color: var(--fg); }
+h6 { color: var(--muted); }
+blockquote { border-left-color: var(--border); color: var(--muted); }
+hr { background: none; border-top: 1px solid var(--border); color: var(--border); }
+table th { border-color: var(--border); }
+table td { border-color: var(--border); }
+table tr { border-top-color: var(--border); background-color: var(--bg); }
+table tr:nth-child(2n) { background-color: var(--bg-alt); }
+code, tt {
+background-color: var(--bg-alt);
+border-color: var(--border);
+color: var(--fg);
+}
+pre, .highlight pre {
+background-color: var(--bg-alt);
+border-color: var(--border);
+color: var(--fg);
+}
+a { color: var(--accent); }
 a:hover { text-decoration: underline; }
 }</style>
   <!--[if lt IE 9]>
