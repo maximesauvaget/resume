@@ -1270,24 +1270,18 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 
    LANGUAGE TOGGLE (HTML ONLY, NOT PDF)
 -------------------------------------*/
 
-/* Hide English by default */
-#en.lang-block { display: none; }
+.lang-block { display: none; }
 
-/* When EN is the target */
-#en:target {
-  display: block;
-}
-#en:target ~ #fr {
-  display: none;
-}
+/* default language */
+.lang-wrapper #fr { display: block; }
 
-/* When FR is the target */
-#fr:target {
-  display: block;
-}
-#fr:target ~ #en {
-  display: none;
-}
+/* toggle logic */
+#fr:target { display: block; }
+#en:target { display: block; }
+
+/* hide the other language when one is targeted */
+:target#fr ~ .lang-block#en { display: none; }
+:target#en ~ .lang-block#fr { display: none; }
 
 /* Language toggle styling */
 .lang-toggle {
