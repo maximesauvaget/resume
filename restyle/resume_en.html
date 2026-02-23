@@ -237,60 +237,192 @@ html[data-theme="light"] {
 <header id="title-block-header">
 <h1 class="title">Maxime Sauvaget</h1>
 </header>
-<h6 id="montpellier-remote---sauvaget.maximegmail.com">[ Montpellier /
-Remote ] - [ sauvaget.maxime@gmail.com ]</h6>
-<h3 id="software-engineer-web-backend-api-tools-infrastructure">Software
-Engineer / Web Backend / API / Tools / Infrastructure</h3>
+<h6 id="montpellier---sauvaget.maximegmail.com">[ Montpellier ] - <a href>sauvaget.maxime@gmail.com</a></h6>
+<h3 id="backend-software-engineer-apis-distributed-systems-rd">Backend
+Software Engineer — APIs · Distributed Systems · R&amp;D</h3>
+<pre>Backend software engineer with 10+ years of experience designing and developing complex distributed systems, APIs, and industrial IIoT platforms. Comfortable taking full ownership of R&amp;D topics — DSL design, graph databases, code generation — and transferring that knowledge to the team. Experience in demanding environments: software vendors, consulting firms, and large industrial groups (GE, Schneider Electric).</pre>
 <h2 id="skills">Skills</h2>
 <p><code>Functional analysis</code> <code>Technical design</code>
 <code>System administration</code> <code>R&amp;D</code></p>
-<table>
-<tr>
-<th>
-Languages
-</th>
-<td>
-<code>C#</code> <code>TypeScript</code> <code>Shell</code>
-<code>SQL</code>
-</td>
-</tr>
-<tr>
-<th>
-.net
-</th>
-<td>
-<code>API</code> <code>MVC</code> <code>ASP</code>
-<code>microservices</code> <code>EF</code>
-</td>
-</tr>
-<tr>
-<th>
-Data
-</th>
-<td>
-<code>Neo4j</code> <code>Janusgraph</code> <code>SQL</code>
-</td>
-</tr>
-<tr>
-<th>
-Front
-</th>
-<td>
-<code>Angular</code>
-</td>
-</tr>
-<tr>
-<th>
-Tools
-</th>
-<td>
-<code>docker</code> <code>compose</code> <code>dockerfile</code>
-<code>git</code> <code>Azure Devops</code> <code>Sonar</code>
-</td>
-</tr>
-</table>
+<h4 id="programming-languages">Programming Languages</h4>
+<ul>
+<li><strong>Proficient</strong>: C#, Python, C, C++</li>
+<li><strong>Familiar</strong>: TypeScript, JavaScript, Scala, Go, SQL,
+LUA, Shell</li>
+</ul>
+<h4 id="backend-distributed-architecture">Backend &amp; Distributed
+Architecture</h4>
+<ul>
+<li><strong>Frameworks &amp; APIs</strong>: .NET, ASP.NET, NestJS, gRPC,
+REST</li>
+<li><strong>Messaging &amp; events</strong>: RabbitMQ, MassTransit,
+MQTT</li>
+<li><strong>Architectures</strong>: Microservices, Event-Driven, CQRS,
+SOA</li>
+<li><strong>Edge computing</strong>: embedded agents, disconnected
+resilience, cloud/edge synchronization</li>
+</ul>
+<h4 id="databases">Databases</h4>
+<ul>
+<li><strong>Relational</strong>: PostgreSQL, SQL Server, T-SQL</li>
+<li><strong>Graph</strong>: neo4j, JanusGraph, Gremlin</li>
+<li><strong>Time series</strong>: InfluxDB</li>
+<li><strong>Cache</strong>: Redis</li>
+</ul>
+<h4 id="cloud-infrastructure">Cloud &amp; Infrastructure</h4>
+<ul>
+<li><strong>Containerization</strong>: Docker, Kubernetes</li>
+<li><strong>CI/CD</strong>: GitHub Actions, GitLab CI, Azure DevOps</li>
+<li><strong>Administration</strong>: Linux, nginx, varnish</li>
+<li><strong>Infrastructure as Code</strong>: Terraform</li>
+</ul>
+<h4 id="observability-reliability">Observability &amp; Reliability</h4>
+<ul>
+<li><strong>Monitoring &amp; Alerting</strong>: Prometheus, Grafana</li>
+<li><strong>Logging</strong>: Loki</li>
+<li><strong>Tracing</strong>: OpenTelemetry, Jaeger</li>
+</ul>
+<h4 id="design-tooling">Design &amp; Tooling</h4>
+<ul>
+<li><strong>Modelling</strong>: DDD, Design Patterns, SOLID, DSL
+design</li>
+<li><strong>Code generation</strong>: Roslyn Source Generation, OGM</li>
+<li><strong>UI &amp; tools</strong>: WPF, VueJs, Angular</li>
+<li><strong>Quality</strong>: TDD, Code Review, unit &amp; integration
+testing</li>
+<li><strong>Versioning</strong>: Git, GitHub, GitLab</li>
+</ul>
+<h4 id="methodologies">Methodologies</h4>
+<ul>
+<li>Scrum, Kanban, Agile</li>
+</ul>
 <h2 id="experience">Experience</h2>
-<p><em>TO BE COMPLETED</em></p>
+<section id="schneider-electricmontpellier" class="experience">
+<h3><span class="org">Schneider Electric</span><span class="meta">Montpellier</span></h3>
+<h4 id="backend-developer-june-2024-present">Backend Developer · June
+2024 – present</h4>
+<pre>Design of an innovative solution for the configuration of industrial electrical equipment (IEC61850/SCL standard). The platform, built around containerized microservices, an event bus, and a graph database, serves as the single source of truth for client project development.</pre>
+<ul>
+<li><strong>Graph database</strong>: Led the R&amp;D and evaluation of
+graph database solutions (neo4j then JanusGraph) — modelled the
+IEC61850/SCL standard as an indexed graph, defined a graph model for
+template-based configuration — <strong>domain graphs reaching ~5 million
+vertices and edges</strong></li>
+<li><strong>Domain graph OGM</strong>: Independently designed and
+developed a domain-specific OGM (Object Graph Mapper) encapsulating
+graph schema complexity and exposing a fluent API to business services —
+<strong>mentored the team</strong> on using and extending the OGM</li>
+<li><strong>Code generation</strong>: Developed internal tooling based
+on <strong>Roslyn source generation</strong> to automate the production
+of mappings, Gremlin queries, and DTOs from domain models —
+<strong>technical reference</strong> on the subject within the team</li>
+<li><strong>Microservices &amp; events</strong>: Containerized
+microservices architecture (Docker), orchestration of business flows via
+<strong>MassTransit / RabbitMQ</strong> (sagas, publish/subscribe, error
+handling and retry)</li>
+<li>Development of REST APIs (.NET 8 / C#), unit and integration test
+coverage</li>
+</ul>
+</section>
+<hr>
+<section id="sport-decouvertela-ciotat" class="experience">
+<h3><span class="org">Sport Decouverte</span><span class="meta">La
+Ciotat</span></h3>
+<h4 id="fullstack-developer-march-2022-january-2024">Fullstack Developer
+· March 2022 – January 2024</h4>
+<pre>E-commerce platform for booking sports and leisure activities online.</pre>
+<ul>
+<li><strong>Channel manager connector</strong>: Designed and developed a
+generic integration service between the internal booking system and
+third-party distributors (channel managers, partner APIs) — availability
+flow management, booking synchronization, and data reconciliation</li>
+<li><strong>Microservices &amp; events</strong>: Developed APIs and
+microservices in <strong>.NET 7 / C#</strong>, orchestrating
+asynchronous flows via <strong>MassTransit / RabbitMQ</strong>
+(publish/subscribe, error handling and retry)</li>
+<li><strong>Back office</strong>: Maintained and evolved the business
+back office (ASP.NET, VueJs) — product, availability, and booking
+management</li>
+<li><strong>Infrastructure &amp; CI/CD</strong>: Server configuration
+generated as code, continuous deployment via <strong>Azure
+DevOps</strong>; Linux server administration (<strong>nginx</strong>,
+<strong>varnish</strong>, <strong>docker</strong>)</li>
+</ul>
+</section>
+<hr>
+<section id="general-electricmontpellier" class="experience">
+<h3><span class="org">General Electric</span><span class="meta">Montpellier</span></h3>
+<h4 id="rd-software-engineer-july-2019-february-2022">R&amp;D Software
+Engineer · July 2019 – February 2022</h4>
+<pre>Division specialising in hardware and software design for energy distribution and transformation equipment. Greenfield design and development of an industrial IIoT platform for supervision, configuration, and communication with these devices.</pre>
+<ul>
+<li><strong>DSL &amp; device modelling</strong>: Designed a DSL enabling
+runtime description of industrial devices — topology, configuration,
+communication protocols, and actions exposed to the platform;
+dynamically interpreted by backend services (NestJS / C#)</li>
+<li><strong>MQTT protocol</strong>: Defined the MQTT communication
+language adopted across the platform — designed topics, payload schemas,
+and routing conventions between edge and cloud</li>
+<li><strong>IIoT microservices architecture</strong>: Collaborated on
+the design and development of the cloud microservices architecture
+(NestJS, C#, PostgreSQL, InfluxDB) — REST and gRPC APIs, time-series
+storage, device state management</li>
+<li><strong>Edge platform</strong>: Designed and developed the embedded
+edge agent (C, Docker) — bidirectional communication with devices via
+MQTT, cloud synchronization, and disconnected resilience</li>
+<li><strong>Legacy modernisation</strong>: Adapted and integrated an
+existing C# service for transient fault analysis into the new
+microservices architecture</li>
+</ul>
+</section>
+<hr>
+<section id="ubisoftmontpellier" class="experience">
+<h3><span class="org">Ubisoft</span><span class="meta">Montpellier</span></h3>
+<h4 id="tools-programmer-september-2017-march-2019">Tools Programmer ·
+September 2017 – March 2019</h4>
+<pre>Tools programmer on the production of Beyond Good &amp; Evil 2 (Montpellier Studio).</pre>
+<ul>
+<li>Developed internal tools in <strong>C# / WPF</strong> for production
+teams — object editor, animation editor</li>
+<li>Automated game asset integration pipelines via <strong>LUA</strong>
+scripts and macros, reducing repetitive manual tasks</li>
+</ul>
+</section>
+<hr>
+<section id="creative-atlantiquenantes" class="experience">
+<h3><span class="org">Creative Atlantique</span><span class="meta">Nantes</span></h3>
+<h4 id="software-engineer-july-2016-june-2017">Software Engineer · July
+2016 – June 2017</h4>
+<ul>
+<li>Assignment at <em>Meteodyn</em> (wind engineering and meteorology) —
+developed a <strong>C# / WPF</strong> frontend for wind turbine
+simulation tools</li>
+</ul>
+</section>
+<hr>
+<section id="sopra-sterianantes" class="experience">
+<h3><span class="org">Sopra Steria</span><span class="meta">Nantes</span></h3>
+<h4 id="software-engineer-september-2014-june-2016">Software Engineer ·
+September 2014 – June 2016</h4>
+<ul>
+<li>Assignment at <em>Bouygues Immobilier</em> — designed and developed
+the financial management module of an ERP in <strong>service-oriented
+architecture</strong> (<strong>C# / WPF / Service Bus</strong>)</li>
+<li>Database performance optimisation: <strong>T-SQL</strong> queries,
+triggers, and stored procedures</li>
+</ul>
+</section>
+<hr>
+<section id="syd-conseilnantes" class="experience">
+<h3><span class="org">Syd Conseil</span><span class="meta">Nantes</span></h3>
+<h4 id="erp-dynamics-ax-developer-january-2013-july-2014">ERP Dynamics
+AX Developer · January 2013 – July 2014</h4>
+<ul>
+<li>Developed business modules and webservices (<strong>C# /
+WCF</strong>) for ERP integration with industrial equipment via
+proprietary protocols (<strong>RS232</strong>)</li>
+</ul>
+</section>
 <h2 id="education">Education</h2>
 <h3 id="supinfo">Supinfo</h3>
 <p><strong>Degree:</strong> <em>Master of Science in Computer
