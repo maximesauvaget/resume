@@ -12,33 +12,33 @@ lang: fr
 ```Administration système```
 ```R&D```
 
-### Langages de Programmation
+#### Langages de Programmation
 - **Maîtrisés** : Python, C++, C, Java
 - **Familier** : Scala, Go, Rust, JavaScript/TypeScript
 
-### Backend & Architecture Distribuée
+#### Backend & Architecture Distribuée
 - **Frameworks & APIs** : FastAPI, Flask, gRPC, REST, GraphQL
 - **Systèmes distribués** : Apache Kafka, RabbitMQ, Apache Flink, Apache Spark
 - **Architectures** : Microservices, Event-Driven Architecture, CQRS
 - **Cache & Performance** : Redis, Memcached, CDN
 
-### Bases de Données
+#### Bases de Données
 - **Relationnelles** : PostgreSQL, SQLServer
 - **Graph** : Janusgraph, neo4j
 - **NoSQL** : MongoDB, Cassandra, Elasticsearch, DynamoDB
 
-### Cloud & Infrastructure
+#### Cloud & Infrastructure
 - **Cloud Providers** : AWS, GCP, Azure
 - **Conteneurisation & Orchestration** : Docker, Kubernetes, Helm
 - **CI/CD** : GitHub Actions, GitLab CI, Jenkins, ArgoCD
 - **Infrastructure as Code** : Terraform, Ansible
 
-### Observabilité & Fiabilité
+#### Observabilité & Fiabilité
 - **Monitoring & Alerting** : Prometheus, Grafana
 - **Logging** : Loki
 - **Tracing** : OpenTelemetry, Jaeger, Zipkin
 
-### Bonnes Pratiques & Méthodologies
+#### Bonnes Pratiques & Méthodologies
 - **Qualité** : TDD, Clean Code, Code Review
 - **Conception** : Design Patterns, DDD (Domain-Driven Design), SOLID
 - **Agilité** : Scrum, Kanban
@@ -143,12 +143,10 @@ lang: fr
 
 ### <span class="org">Ubisoft</span><span class="meta">Montpellier</span>
 #### Programmeur outils · Septembre 2017 – Mars 2019
-<pre>Programmeur outils sur la production de Beyond Good & Evil 2</pre>
+<pre>Programmeur outils sur la production de Beyond Good & Evil 2 (Montpellier Studio).</pre>
 
-- Développement d'interfaces à destination des métiers de la production : éditeur d'objet, éditeur d'animation
-- Développement de scripts et macros pour optimiser les pipelines d'intégration des données de jeu
-
-```C#``` ```WPF``` ```LUA``` ```C++``` ```git``` ```Perforce``` ```Wwise```
+- Développement d'outils internes en **C# / WPF** à destination des équipes de production — éditeur d'objets, éditeur d'animations
+- Automation des pipelines d'intégration des assets de jeu via scripts **LUA** et macros, réduisant les tâches manuelles répétitives
 
 </div>
 
@@ -159,10 +157,7 @@ lang: fr
 ### <span class="org">Créative Atlantique</span><span class="meta">Nantes</span>
 #### Ingénieur logiciel · Juillet 2016 – Juin 2017
 
-- Mission pour *Meteodyn*, société experte en ingénierie du vent, de la climatologie et de la météorologie
-- Développeur C# et WPF pour un frontend spécifique aux outils de simulations d'éoliennes
-
-```C#``` ```WPF``` ```git / gitlab```
+- Mission chez *Meteodyn* (ingénierie du vent et météorologie) — développement d'un frontend **C# / WPF** pour des outils de simulation d'éoliennes
 
 </div>
 
@@ -173,11 +168,8 @@ lang: fr
 ### <span class="org">Sopra Steria</span><span class="meta">Nantes</span>
 #### Ingénieur logiciel · Septembre 2014 – Juin 2016
 
-- Conception d'un ERP en architecture orientée service pour *Bouygues Immobilier*
-- Analyse, conception et développement du service de gestion des finances
-- Optimisation des requêtes T-SQL, triggers et procédures stockées
-
-```C#``` ```T-SQL``` ```WPF``` ```Service Bus```
+- Mission chez *Bouygues Immobilier* — conception et développement du module de gestion financière d'un ERP en **architecture orientée services** (**C# / WPF / Service Bus**)
+- Optimisation des performances base de données : requêtes **T-SQL**, triggers et procédures stockées
 
 </div>
 
@@ -188,10 +180,7 @@ lang: fr
 ### <span class="org">Syd Conseil</span><span class="meta">Nantes</span>
 #### Développeur ERP Dynamics AX · Janvier 2013 – Juillet 2014
 
-- Création de webservices permettant l'interaction entre l'ERP et des équipements industriels via protocoles propriétaires
-- Développement de modules métiers spécifiques dans l'ERP
-
-```x++``` ```C#``` ```WCF``` ```RS232```
+- Développement de modules métiers et de webservices (**C# / WCF**) pour l'intégration de l'ERP avec des équipements industriels via protocoles propriétaires (**RS232**)
 
 </div>
 
