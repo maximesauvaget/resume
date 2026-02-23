@@ -1358,3 +1358,22 @@ html[data-theme="light"] .highlight pre {
   background-color: #f8f8f8; border-color: #ccc;
 }
 html[data-theme="light"] a { color: var(--accent); }
+
+/* ---------- Text justification ---------- */
+pre {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  font-family: inherit;  /* override monospace for resume summary blocks */
+  font-size: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  white-space: pre-wrap;
+}
+
+li {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
