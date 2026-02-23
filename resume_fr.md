@@ -13,83 +13,42 @@ lang: fr
 ```R&D```
 
 #### Langages de Programmation
-- **Maîtrisés** : Python, C++, C, Java
-- **Familier** : Scala, Go, Rust, JavaScript/TypeScript
+- **Maîtrisés** : C#, Python, C, C++
+- **Familier** : TypeScript, JavaScript, Scala, Go, SQL, LUA, Shell
 
 #### Backend & Architecture Distribuée
-- **Frameworks & APIs** : FastAPI, Flask, gRPC, REST, GraphQL
-- **Systèmes distribués** : Apache Kafka, RabbitMQ, Apache Flink, Apache Spark
-- **Architectures** : Microservices, Event-Driven Architecture, CQRS
-- **Cache & Performance** : Redis, Memcached, CDN
+- **Frameworks & APIs** : .NET, ASP.NET, NestJS, gRPC, REST
+- **Messagerie & événements** : RabbitMQ, MassTransit, MQTT
+- **Architectures** : Microservices, Event-Driven, CQRS, SOA
+- **Edge computing** : agents embarqués, résilience déconnectée, synchronisation cloud/edge
 
 #### Bases de Données
-- **Relationnelles** : PostgreSQL, SQLServer
-- **Graph** : Janusgraph, neo4j
-- **NoSQL** : MongoDB, Cassandra, Elasticsearch, DynamoDB
+- **Relationnelles** : PostgreSQL, SQL Server, T-SQL
+- **Graphe** : neo4j, JanusGraph, Gremlin
+- **Séries temporelles** : InfluxDB
+- **Cache** : Redis
 
 #### Cloud & Infrastructure
-- **Cloud Providers** : AWS, GCP, Azure
-- **Conteneurisation & Orchestration** : Docker, Kubernetes, Helm
-- **CI/CD** : GitHub Actions, GitLab CI, Jenkins, ArgoCD
-- **Infrastructure as Code** : Terraform, Ansible
+- **Conteneurisation** : Docker, Kubernetes
+- **CI/CD** : GitHub Actions, GitLab CI, Azure DevOps
+- **Administration** : Linux, nginx, varnish
+- **Infrastructure as Code** : Terraform
 
 #### Observabilité & Fiabilité
 - **Monitoring & Alerting** : Prometheus, Grafana
 - **Logging** : Loki
-- **Tracing** : OpenTelemetry, Jaeger, Zipkin
+- **Tracing** : OpenTelemetry, Jaeger
 
-#### Bonnes Pratiques & Méthodologies
-- **Qualité** : TDD, Clean Code, Code Review
-- **Conception** : Design Patterns, DDD (Domain-Driven Design), SOLID
-- **Agilité** : Scrum, Kanban
-- **Versioning** : Git, GitHub
+#### Conception & Outillage
+- **Modélisation** : DDD, Design Patterns, SOLID, DSL design
+- **Génération de code** : Roslyn Source Generation, OGM
+- **UI & outils** : WPF, VueJs, Angular
+- **Qualité** : TDD, Code Review, tests unitaires & intégration
+- **Versioning** : Git, GitHub, GitLab
 
-<table>
-  <tr>
-    <th>Langages</th>
-    <td>
-      <code>C#</code>
-      <code>TypeScript</code>
-      <code>Shell</code>
-      <code>SQL</code>
-    </td>
-  </tr>
-  <tr>
-    <th>.net</th>
-    <td>
-      <code>API</code>
-      <code>MVC</code>
-      <code>ASP</code>
-      <code>microservices</code>
-      <code>EF</code>
-    </td>
-  </tr>
-  <tr>
-    <th>Data</th>
-    <td>
-      <code>Neo4j</code>
-      <code>Janusgraph</code>
-      <code>SQL</code>
-    </td>
-  </tr>
-  <tr>
-    <th>Front</th>
-    <td>
-      <code>Angular</code>
-    </td>
-  </tr>
-  <tr>
-    <th>Outils</th>
-    <td>
-      <code>docker</code>
-      <code>compose</code>
-      <code>dockerfile</code>
-      <code>git</code>
-      <code>Azure Devops</code>
-      <code>Sonar</code>
-    </td>
-  </tr>
-</table>
+#### Méthodologies
+- Scrum, Kanban, Agile
+
 
 ## Expériences
 <div class="experience">
@@ -98,9 +57,9 @@ lang: fr
 #### Développeur backend · Juin 2024 – présent
 <pre>Conception d'une solution innovante pour la configuration d'équipements électriques industriels (norme IEC61850/SCL). La plateforme, articulée autour de microservices conteneurisés, d'un bus d'événements et d'une base de données graphe, constitue le référentiel unique pour le développement de projets clients.</pre>
 
-- **Graph database** : R&D et mise en œuvre d'une base de données graphe (neo4j puis JanusGraph) comme source de vérité unique — modélisation du standard IEC61850/SCL sous forme de graphe indexé, définition d'un modèle de graphe pour la configuration par template
-- **Graph OGM métier** : Conception et développement d'un OGM (Object Graph Mapper) spécifique au domaine, encapsulant la complexité du schéma de graphe et exposant une API fluente aux services métiers
-- **Génération de code** : Développement d'outils internes basés sur la **génération de source Roslyn** pour automatiser la production de mappings, de requêtes Gremlin et de DTOs à partir des modèles de domaine
+- **Graph database** : Responsable de la R&D et de l'évaluation des solutions de base de données graphe (neo4j puis JanusGraph) — modélisation du standard IEC61850/SCL sous forme de graphe indexé, définition d'un modèle de graphe pour la configuration par template — **graphes métiers atteignant ~5 millions de sommets et arêtes**
+- **Graph OGM métier** : Conception et développement en autonomie d'un OGM (Object Graph Mapper) spécifique au domaine, encapsulant la complexité du schéma de graphe et exposant une API fluente aux services métiers — **formation et accompagnement de l'équipe** sur l'utilisation et l'extension de l'OGM
+- **Génération de code** : Développement d'outils internes basés sur la **génération de source Roslyn** pour automatiser la production de mappings, de requêtes Gremlin et de DTOs à partir des modèles de domaine — **référent technique** sur le sujet au sein de l'équipe
 - **Microservices & événements** : Architecture microservices conteneurisée (Docker), orchestration des flux métiers via **MassTransit / RabbitMQ** (sagas, publish/subscribe, gestion des erreurs et retry)
 - Développement des APIs REST (.NET 8 / C#), écriture des tests unitaires et d'intégration
 
