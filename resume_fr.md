@@ -3,14 +3,46 @@ title: Maxime Sauvaget
 lang: fr
 ---
 
-###### [ Montpellier / Remote ] - [ sauvaget.maxime@gmail.com ]
-### Ingénieur logiciel / web backend / API / Tools / Infrastructure
+###### [ Montpellier ] - [ sauvaget.maxime@gmail.com ]()
+### Ingénieur Logiciel Backend — APIs · Systèmes Distribués · R&D
 
 ## Compétences
 ```Analyse fonctionnelle```
 ```Conception technique```
 ```Administration système```
 ```R&D```
+
+### Langages de Programmation
+- **Maîtrisés** : Python, C++, C, Java
+- **Familier** : Scala, Go, Rust, JavaScript/TypeScript
+
+### Backend & Architecture Distribuée
+- **Frameworks & APIs** : FastAPI, Flask, gRPC, REST, GraphQL
+- **Systèmes distribués** : Apache Kafka, RabbitMQ, Apache Flink, Apache Spark
+- **Architectures** : Microservices, Event-Driven Architecture, CQRS
+- **Cache & Performance** : Redis, Memcached, CDN
+
+### Bases de Données
+- **Relationnelles** : PostgreSQL, SQLServer
+- **Graph** : Janusgraph, neo4j
+- **NoSQL** : MongoDB, Cassandra, Elasticsearch, DynamoDB
+
+### Cloud & Infrastructure
+- **Cloud Providers** : AWS, GCP, Azure
+- **Conteneurisation & Orchestration** : Docker, Kubernetes, Helm
+- **CI/CD** : GitHub Actions, GitLab CI, Jenkins, ArgoCD
+- **Infrastructure as Code** : Terraform, Ansible
+
+### Observabilité & Fiabilité
+- **Monitoring & Alerting** : Prometheus, Grafana
+- **Logging** : Loki
+- **Tracing** : OpenTelemetry, Jaeger, Zipkin
+
+### Bonnes Pratiques & Méthodologies
+- **Qualité** : TDD, Clean Code, Code Review
+- **Conception** : Design Patterns, DDD (Domain-Driven Design), SOLID
+- **Agilité** : Scrum, Kanban
+- **Versioning** : Git, GitHub
 
 <table>
   <tr>
@@ -60,58 +92,54 @@ lang: fr
 </table>
 
 ## Expériences
-### <span class="org">SII pour Schneider Electric</span><span class="meta">Lattes</span>
+<div class="experience">
+
+### <span class="org">Schneider Electric</span><span class="meta">Montpellier</span>
 #### Développeur backend · Juin 2024 – présent
-<pre>Conception d'une solution innovante pour la configuration d'équipements électriques. Articulée autour d'applications web, microservices et connecteurs elle a pour vocation d'être le référentiel unique pour le développement de projets clients.</pre>
+<pre>Conception d'une solution innovante pour la configuration d'équipements électriques industriels (norme IEC61850/SCL). La plateforme, articulée autour de microservices conteneurisés, d'un bus d'événements et d'une base de données graphe, constitue le référentiel unique pour le développement de projets clients.</pre>
 
-- R&D sur l'utilisation d'une base de données graphe (neo4j puis Janusgraph) comme seule source de données
-- Transformation du modèle IEC61850 en graphe indexé
-- Définition d'un modèle de graphe pour la configuration par template
-- Développement des services, tests
+- **Graph database** : R&D et mise en œuvre d'une base de données graphe (neo4j puis JanusGraph) comme source de vérité unique — modélisation du standard IEC61850/SCL sous forme de graphe indexé, définition d'un modèle de graphe pour la configuration par template
+- **Graph OGM métier** : Conception et développement d'un OGM (Object Graph Mapper) spécifique au domaine, encapsulant la complexité du schéma de graphe et exposant une API fluente aux services métiers
+- **Génération de code** : Développement d'outils internes basés sur la **génération de source Roslyn** pour automatiser la production de mappings, de requêtes Gremlin et de DTOs à partir des modèles de domaine
+- **Microservices & événements** : Architecture microservices conteneurisée (Docker), orchestration des flux métiers via **MassTransit / RabbitMQ** (sagas, publish/subscribe, gestion des erreurs et retry)
+- Développement des APIs REST (.NET 8 / C#), écriture des tests unitaires et d'intégration
 
-APIs : ```.NET 8``` ```C#``` ```MassTransit``` ```RabbitMQ```<br>
-Data : ```neo4j``` ```Janusgraph``` <br>
-Front : ```Angular``` ```Figma``` <br>
-CI/CD : ```GitHub``` ```Sonar``` ```BrowserStack``` <br>
-Infrastructure : ```linux``` ```docker``` ```nginx```
+</div>
 
 <hr>
+
+<div class="experience">
 
 ### <span class="org">Sport Découverte</span><span class="meta">La Ciotat</span>
 #### Développeur fullstack · Mars 2022 – Janvier 2024
-<pre>Plateforme de réservation d'activités sportives et de loisirs en ligne</pre>
+<pre>Plateforme e-commerce de réservation d'activités sportives et de loisirs en ligne.</pre>
 
-- Conception et développement d'un service générique d'interfaçage entre le système de réservation interne et les acteurs du marché (channel manager et APIs).
-- Développement des microservices et APIs
-- Maintenance et évolution du back office (front et business)
-- Génération de la configuration des serveurs par le code et déploiement via CI/CD
-- Administration des serveurs linux et leurs services
+- **Connecteur channel manager** : Conception et développement d'un service générique d'intégration entre le système de réservation interne et les distributeurs tiers (channel managers, APIs partenaires) — gestion des flux de disponibilités, synchronisation des réservations et réconciliation des données
+- **Microservices & événements** : Développement des APIs et microservices en **.NET 7 / C#**, orchestration des flux asynchrones via **MassTransit / RabbitMQ** (publish/subscribe, gestion des erreurs et retry)
+- **Back office** : Maintenance et évolution du back office métier (ASP.NET, VueJs) — gestion des produits, des disponibilités et du suivi des réservations
+- **Infrastructure & CI/CD** : Génération de la configuration serveur par le code, déploiement continu via **Azure DevOps** ; administration des serveurs Linux et de leurs services (**nginx**, **varnish**, **docker**)
 
-APIs : ```.NET 7``` ```C#``` ```MassTransit``` ```RabbitMQ``` ```EF Core``` <br>
-BackOffice : ```ASP``` ```VueJs``` <br>
-Front : ```ASP``` ```React``` <br>
-CI/CD : ```Azure DevOps``` ```Sonar``` ```BrowserStack``` <br>
-Infrastructure : ```linux``` ```docker``` ```nginx``` ```varnish```
+</div>
 
 <hr>
 
-### <span class="org">General Electric — Grid Solutions</span><span class="meta">Montpellier</span>
+<div class="experience">
+
+### <span class="org">General Electric</span><span class="meta">Montpellier</span>
 #### Ingénieur logiciel R&D · Juillet 2019 – Février 2022
-<pre>Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie.
-Elaboration, conception et développement d'une plateforme IIoT dédiée à ces équipements.</pre>
+<pre>Division spécialisée dans la conception hardware et software d'équipements liés à la distribution et transformation d'énergie. Conception et développement from scratch d'une plateforme IIoT industrielle dédiée à la supervision, configuration et communication avec ces équipements.</pre>
 
-- Conception d'un DSL permettant la description au runtime d'équipements : description, configuration, communication, actions
-- Conception du langage (topics et payloads) MQTT adopté par la plateforme
-- Conception et développement, en équipe, de l'architecture microservices de la plateforme IIoT
-- Conception de la plateforme edge (conteneur / service C / MQTT)
-- Adaptation d'un service legacy C# de gestion et analyse des perturbations transitoires
+- **DSL & modélisation d'équipements** : Conception d'un DSL permettant la description au runtime d'équipements industriels — topologie, configuration, protocoles de communication et actions exposées à la plateforme ; interprété dynamiquement par les services backend (NestJS / C#)
+- **Protocole MQTT** : Définition du langage de communication MQTT adopté par l'ensemble de la plateforme — conception des topics, des schémas de payloads et des conventions de routage entre edge et cloud
+- **Architecture microservices IIoT** : Conception et développement collaboratif de l'architecture microservices cloud (NestJS, C#, PostgreSQL, InfluxDB) — APIs REST et gRPC, stockage des séries temporelles, gestion des états équipements
+- **Plateforme edge** : Conception et développement de l'agent edge embarqué (C, Docker) — communication bidirectionnelle avec les équipements via MQTT, synchronisation avec les services cloud et résilience en mode déconnecté
+- **Modernisation legacy** : Adaptation et intégration d'un service C# existant d'analyse des perturbations transitoires au sein de la nouvelle architecture microservices
 
-Plateforme (front) : ```NestJS``` ```Angular``` ```CoreUI``` <br>
-Plateforme (back) : ```NestJS``` ```C#``` ```postgresql``` ```InfluxDB```<br>
-Plateforme (edge) : ```docker``` ```C``` ```NestJS```<br>
-Communication : ```gRPC``` ```MQTT```<br>
+</div>
 
 <hr>
+
+<div class="experience">
 
 ### <span class="org">Ubisoft</span><span class="meta">Montpellier</span>
 #### Programmeur outils · Septembre 2017 – Mars 2019
@@ -122,7 +150,11 @@ Communication : ```gRPC``` ```MQTT```<br>
 
 ```C#``` ```WPF``` ```LUA``` ```C++``` ```git``` ```Perforce``` ```Wwise```
 
+</div>
+
 <hr>
+
+<div class="experience">
 
 ### <span class="org">Créative Atlantique</span><span class="meta">Nantes</span>
 #### Ingénieur logiciel · Juillet 2016 – Juin 2017
@@ -132,7 +164,11 @@ Communication : ```gRPC``` ```MQTT```<br>
 
 ```C#``` ```WPF``` ```git / gitlab```
 
+</div>
+
 <hr>
+
+<div class="experience">
 
 ### <span class="org">Sopra Steria</span><span class="meta">Nantes</span>
 #### Ingénieur logiciel · Septembre 2014 – Juin 2016
@@ -143,7 +179,11 @@ Communication : ```gRPC``` ```MQTT```<br>
 
 ```C#``` ```T-SQL``` ```WPF``` ```Service Bus```
 
+</div>
+
 <hr>
+
+<div class="experience">
 
 ### <span class="org">Syd Conseil</span><span class="meta">Nantes</span>
 #### Développeur ERP Dynamics AX · Janvier 2013 – Juillet 2014
@@ -152,6 +192,8 @@ Communication : ```gRPC``` ```MQTT```<br>
 - Développement de modules métiers spécifiques dans l'ERP
 
 ```x++``` ```C#``` ```WCF``` ```RS232```
+
+</div>
 
 ## Formation
 ### Supinfo

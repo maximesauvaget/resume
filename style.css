@@ -849,6 +849,11 @@ sub {
   }
   /* Avoid page breaks immediately after headings */
   h2, h3 { break-after: avoid; }
+  /* Keep each experience block on the same page */
+  .experience {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
   /* Tighter lists for 1-page fit */
   li { margin-bottom: 0.25rem; }
 
