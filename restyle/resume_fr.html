@@ -603,6 +603,11 @@ padding-top: 0.6rem;
 
 h2, h3 { break-after: avoid; }
 
+.experience {
+break-inside: avoid;
+page-break-inside: avoid;
+}
+
 li { margin-bottom: 0.25rem; }
 body {
 background: #fff
@@ -1024,13 +1029,62 @@ html[data-theme="light"] a { color: var(--accent); }</style>
 <header id="title-block-header">
 <h1 class="title">Maxime Sauvaget</h1>
 </header>
-<h6 id="montpellier-remote---sauvaget.maximegmail.com">[ Montpellier /
-Remote ] - [ sauvaget.maxime@gmail.com ]</h6>
-<h3 id="ingénieur-logiciel-web-backend-api-tools-infrastructure">Ingénieur
-logiciel / web backend / API / Tools / Infrastructure</h3>
+<h6 id="montpellier---sauvaget.maximegmail.com">[ Montpellier ] - <a href>sauvaget.maxime@gmail.com</a></h6>
+<h3 id="ingénieur-logiciel-backend-apis-systèmes-distribués-rd">Ingénieur
+Logiciel Backend — APIs · Systèmes Distribués · R&amp;D</h3>
 <h2 id="compétences">Compétences</h2>
 <p><code>Analyse fonctionnelle</code> <code>Conception technique</code>
 <code>Administration système</code> <code>R&amp;D</code></p>
+<h3 id="langages-de-programmation">Langages de Programmation</h3>
+<ul>
+<li><strong>Maîtrisés</strong> : Python, C++, C, Java</li>
+<li><strong>Familier</strong> : Scala, Go, Rust,
+JavaScript/TypeScript</li>
+</ul>
+<h3 id="backend-architecture-distribuée">Backend &amp; Architecture
+Distribuée</h3>
+<ul>
+<li><strong>Frameworks &amp; APIs</strong> : FastAPI, Flask, gRPC, REST,
+GraphQL</li>
+<li><strong>Systèmes distribués</strong> : Apache Kafka, RabbitMQ,
+Apache Flink, Apache Spark</li>
+<li><strong>Architectures</strong> : Microservices, Event-Driven
+Architecture, CQRS</li>
+<li><strong>Cache &amp; Performance</strong> : Redis, Memcached,
+CDN</li>
+</ul>
+<h3 id="bases-de-données">Bases de Données</h3>
+<ul>
+<li><strong>Relationnelles</strong> : PostgreSQL, SQLServer</li>
+<li><strong>Graph</strong> : Janusgraph, neo4j</li>
+<li><strong>NoSQL</strong> : MongoDB, Cassandra, Elasticsearch,
+DynamoDB</li>
+</ul>
+<h3 id="cloud-infrastructure">Cloud &amp; Infrastructure</h3>
+<ul>
+<li><strong>Cloud Providers</strong> : AWS, GCP, Azure</li>
+<li><strong>Conteneurisation &amp; Orchestration</strong> : Docker,
+Kubernetes, Helm</li>
+<li><strong>CI/CD</strong> : GitHub Actions, GitLab CI, Jenkins,
+ArgoCD</li>
+<li><strong>Infrastructure as Code</strong> : Terraform, Ansible</li>
+</ul>
+<h3 id="observabilité-fiabilité">Observabilité &amp; Fiabilité</h3>
+<ul>
+<li><strong>Monitoring &amp; Alerting</strong> : Prometheus,
+Grafana</li>
+<li><strong>Logging</strong> : Loki</li>
+<li><strong>Tracing</strong> : OpenTelemetry, Jaeger, Zipkin</li>
+</ul>
+<h3 id="bonnes-pratiques-méthodologies">Bonnes Pratiques &amp;
+Méthodologies</h3>
+<ul>
+<li><strong>Qualité</strong> : TDD, Clean Code, Code Review</li>
+<li><strong>Conception</strong> : Design Patterns, DDD (Domain-Driven
+Design), SOLID</li>
+<li><strong>Agilité</strong> : Scrum, Kanban</li>
+<li><strong>Versioning</strong> : Git, GitHub</li>
+</ul>
 <table>
 <tr>
 <th>
@@ -1077,73 +1131,92 @@ Outils
 </tr>
 </table>
 <h2 id="expériences">Expériences</h2>
-<h3 id="sii-pour-schneider-electriclattes"><span class="org">SII pour
-Schneider Electric</span><span class="meta">Lattes</span></h3>
+<section id="schneider-electricmontpellier" class="experience">
+<h3><span class="org">Schneider Electric</span><span class="meta">Montpellier</span></h3>
 <h4 id="développeur-backend-juin-2024-présent">Développeur backend ·
 Juin 2024 – présent</h4>
-<pre>Conception d&#39;une solution innovante pour la configuration d&#39;équipements électriques. Articulée autour d&#39;applications web, microservices et connecteurs elle a pour vocation d&#39;être le référentiel unique pour le développement de projets clients.</pre>
+<pre>Conception d&#39;une solution innovante pour la configuration d&#39;équipements électriques industriels (norme IEC61850/SCL). La plateforme, articulée autour de microservices conteneurisés, d&#39;un bus d&#39;événements et d&#39;une base de données graphe, constitue le référentiel unique pour le développement de projets clients.</pre>
 <ul>
-<li>R&amp;D sur l’utilisation d’une base de données graphe (neo4j puis
-Janusgraph) comme seule source de données</li>
-<li>Transformation du modèle IEC61850 en graphe indexé</li>
-<li>Définition d’un modèle de graphe pour la configuration par
+<li><strong>Graph database</strong> : R&amp;D et mise en œuvre d’une
+base de données graphe (neo4j puis JanusGraph) comme source de vérité
+unique — modélisation du standard IEC61850/SCL sous forme de graphe
+indexé, définition d’un modèle de graphe pour la configuration par
 template</li>
-<li>Développement des services, tests</li>
+<li><strong>Graph OGM métier</strong> : Conception et développement d’un
+OGM (Object Graph Mapper) spécifique au domaine, encapsulant la
+complexité du schéma de graphe et exposant une API fluente aux services
+métiers</li>
+<li><strong>Génération de code</strong> : Développement d’outils
+internes basés sur la <strong>génération de source Roslyn</strong> pour
+automatiser la production de mappings, de requêtes Gremlin et de DTOs à
+partir des modèles de domaine</li>
+<li><strong>Microservices &amp; événements</strong> : Architecture
+microservices conteneurisée (Docker), orchestration des flux métiers via
+<strong>MassTransit / RabbitMQ</strong> (sagas, publish/subscribe,
+gestion des erreurs et retry)</li>
+<li>Développement des APIs REST (.NET 8 / C#), écriture des tests
+unitaires et d’intégration</li>
 </ul>
-<p>APIs : <code>.NET 8</code> <code>C#</code> <code>MassTransit</code>
-<code>RabbitMQ</code><br> Data : <code>neo4j</code>
-<code>Janusgraph</code> <br> Front : <code>Angular</code>
-<code>Figma</code> <br> CI/CD : <code>GitHub</code> <code>Sonar</code>
-<code>BrowserStack</code> <br> Infrastructure : <code>linux</code>
-<code>docker</code> <code>nginx</code></p>
+</section>
 <hr>
-<h3 id="sport-découvertela-ciotat"><span class="org">Sport
-Découverte</span><span class="meta">La Ciotat</span></h3>
+<section id="sport-découvertela-ciotat" class="experience">
+<h3><span class="org">Sport Découverte</span><span class="meta">La
+Ciotat</span></h3>
 <h4 id="développeur-fullstack-mars-2022-janvier-2024">Développeur
 fullstack · Mars 2022 – Janvier 2024</h4>
-<pre>Plateforme de réservation d&#39;activités sportives et de loisirs en ligne</pre>
+<pre>Plateforme e-commerce de réservation d&#39;activités sportives et de loisirs en ligne.</pre>
 <ul>
-<li>Conception et développement d’un service générique d’interfaçage
-entre le système de réservation interne et les acteurs du marché
-(channel manager et APIs).</li>
-<li>Développement des microservices et APIs</li>
-<li>Maintenance et évolution du back office (front et business)</li>
-<li>Génération de la configuration des serveurs par le code et
-déploiement via CI/CD</li>
-<li>Administration des serveurs linux et leurs services</li>
+<li><strong>Connecteur channel manager</strong> : Conception et
+développement d’un service générique d’intégration entre le système de
+réservation interne et les distributeurs tiers (channel managers, APIs
+partenaires) — gestion des flux de disponibilités, synchronisation des
+réservations et réconciliation des données</li>
+<li><strong>Microservices &amp; événements</strong> : Développement des
+APIs et microservices en <strong>.NET 7 / C#</strong>, orchestration des
+flux asynchrones via <strong>MassTransit / RabbitMQ</strong>
+(publish/subscribe, gestion des erreurs et retry)</li>
+<li><strong>Back office</strong> : Maintenance et évolution du back
+office métier (ASP.NET, VueJs) — gestion des produits, des
+disponibilités et du suivi des réservations</li>
+<li><strong>Infrastructure &amp; CI/CD</strong> : Génération de la
+configuration serveur par le code, déploiement continu via <strong>Azure
+DevOps</strong> ; administration des serveurs Linux et de leurs services
+(<strong>nginx</strong>, <strong>varnish</strong>,
+<strong>docker</strong>)</li>
 </ul>
-<p>APIs : <code>.NET 7</code> <code>C#</code> <code>MassTransit</code>
-<code>RabbitMQ</code> <code>EF Core</code> <br> BackOffice :
-<code>ASP</code> <code>VueJs</code> <br> Front : <code>ASP</code>
-<code>React</code> <br> CI/CD : <code>Azure DevOps</code>
-<code>Sonar</code> <code>BrowserStack</code> <br> Infrastructure :
-<code>linux</code> <code>docker</code> <code>nginx</code>
-<code>varnish</code></p>
+</section>
 <hr>
-<h3 id="general-electric-grid-solutionsmontpellier"><span class="org">General Electric — Grid Solutions</span><span class="meta">Montpellier</span></h3>
+<section id="general-electricmontpellier" class="experience">
+<h3><span class="org">General Electric</span><span class="meta">Montpellier</span></h3>
 <h4 id="ingénieur-logiciel-rd-juillet-2019-février-2022">Ingénieur
 logiciel R&amp;D · Juillet 2019 – Février 2022</h4>
-<pre>Division spécialisée dans la conception hardware et software d&#39;équipements liés à la distribution et transformation d&#39;énergie.
-Elaboration, conception et développement d&#39;une plateforme IIoT dédiée à ces équipements.</pre>
+<pre>Division spécialisée dans la conception hardware et software d&#39;équipements liés à la distribution et transformation d&#39;énergie. Conception et développement from scratch d&#39;une plateforme IIoT industrielle dédiée à la supervision, configuration et communication avec ces équipements.</pre>
 <ul>
-<li>Conception d’un DSL permettant la description au runtime
-d’équipements : description, configuration, communication, actions</li>
-<li>Conception du langage (topics et payloads) MQTT adopté par la
-plateforme</li>
-<li>Conception et développement, en équipe, de l’architecture
-microservices de la plateforme IIoT</li>
-<li>Conception de la plateforme edge (conteneur / service C / MQTT)</li>
-<li>Adaptation d’un service legacy C# de gestion et analyse des
-perturbations transitoires</li>
+<li><strong>DSL &amp; modélisation d’équipements</strong> : Conception
+d’un DSL permettant la description au runtime d’équipements industriels
+— topologie, configuration, protocoles de communication et actions
+exposées à la plateforme ; interprété dynamiquement par les services
+backend (NestJS / C#)</li>
+<li><strong>Protocole MQTT</strong> : Définition du langage de
+communication MQTT adopté par l’ensemble de la plateforme — conception
+des topics, des schémas de payloads et des conventions de routage entre
+edge et cloud</li>
+<li><strong>Architecture microservices IIoT</strong> : Conception et
+développement collaboratif de l’architecture microservices cloud
+(NestJS, C#, PostgreSQL, InfluxDB) — APIs REST et gRPC, stockage des
+séries temporelles, gestion des états équipements</li>
+<li><strong>Plateforme edge</strong> : Conception et développement de
+l’agent edge embarqué (C, Docker) — communication bidirectionnelle avec
+les équipements via MQTT, synchronisation avec les services cloud et
+résilience en mode déconnecté</li>
+<li><strong>Modernisation legacy</strong> : Adaptation et intégration
+d’un service C# existant d’analyse des perturbations transitoires au
+sein de la nouvelle architecture microservices</li>
 </ul>
-<p>Plateforme (front) : <code>NestJS</code> <code>Angular</code>
-<code>CoreUI</code> <br> Plateforme (back) : <code>NestJS</code>
-<code>C#</code> <code>postgresql</code> <code>InfluxDB</code><br>
-Plateforme (edge) : <code>docker</code> <code>C</code>
-<code>NestJS</code><br> Communication : <code>gRPC</code>
-<code>MQTT</code><br></p>
+</section>
 <hr>
-<h3 id="ubisoftmontpellier"><span class="org">Ubisoft</span><span class="meta">Montpellier</span></h3>
+<section id="ubisoftmontpellier" class="experience">
+<h3><span class="org">Ubisoft</span><span class="meta">Montpellier</span></h3>
 <h4 id="programmeur-outils-septembre-2017-mars-2019">Programmeur outils
 · Septembre 2017 – Mars 2019</h4>
 <pre>Programmeur outils sur la production de Beyond Good &amp; Evil 2</pre>
@@ -1155,9 +1228,10 @@ d’intégration des données de jeu</li>
 </ul>
 <p><code>C#</code> <code>WPF</code> <code>LUA</code> <code>C++</code>
 <code>git</code> <code>Perforce</code> <code>Wwise</code></p>
+</section>
 <hr>
-<h3 id="créative-atlantiquenantes"><span class="org">Créative
-Atlantique</span><span class="meta">Nantes</span></h3>
+<section id="créative-atlantiquenantes" class="experience">
+<h3><span class="org">Créative Atlantique</span><span class="meta">Nantes</span></h3>
 <h4 id="ingénieur-logiciel-juillet-2016-juin-2017">Ingénieur logiciel ·
 Juillet 2016 – Juin 2017</h4>
 <ul>
@@ -1167,8 +1241,10 @@ vent, de la climatologie et de la météorologie</li>
 simulations d’éoliennes</li>
 </ul>
 <p><code>C#</code> <code>WPF</code> <code>git / gitlab</code></p>
+</section>
 <hr>
-<h3 id="sopra-sterianantes"><span class="org">Sopra Steria</span><span class="meta">Nantes</span></h3>
+<section id="sopra-sterianantes" class="experience">
+<h3><span class="org">Sopra Steria</span><span class="meta">Nantes</span></h3>
 <h4 id="ingénieur-logiciel-septembre-2014-juin-2016">Ingénieur logiciel
 · Septembre 2014 – Juin 2016</h4>
 <ul>
@@ -1181,8 +1257,10 @@ stockées</li>
 </ul>
 <p><code>C#</code> <code>T-SQL</code> <code>WPF</code>
 <code>Service Bus</code></p>
+</section>
 <hr>
-<h3 id="syd-conseilnantes"><span class="org">Syd Conseil</span><span class="meta">Nantes</span></h3>
+<section id="syd-conseilnantes" class="experience">
+<h3><span class="org">Syd Conseil</span><span class="meta">Nantes</span></h3>
 <h4 id="développeur-erp-dynamics-ax-janvier-2013-juillet-2014">Développeur
 ERP Dynamics AX · Janvier 2013 – Juillet 2014</h4>
 <ul>
@@ -1192,6 +1270,7 @@ ERP Dynamics AX · Janvier 2013 – Juillet 2014</h4>
 </ul>
 <p><code>x++</code> <code>C#</code> <code>WCF</code>
 <code>RS232</code></p>
+</section>
 <h2 id="formation">Formation</h2>
 <h3 id="supinfo">Supinfo</h3>
 <p><strong>Diplôme:</strong> <em>Master of Science in Computer
