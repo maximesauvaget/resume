@@ -1037,99 +1037,59 @@ Logiciel Backend — APIs · Systèmes Distribués · R&amp;D</h3>
 <code>Administration système</code> <code>R&amp;D</code></p>
 <h4 id="langages-de-programmation">Langages de Programmation</h4>
 <ul>
-<li><strong>Maîtrisés</strong> : Python, C++, C, Java</li>
-<li><strong>Familier</strong> : Scala, Go, Rust,
-JavaScript/TypeScript</li>
+<li><strong>Maîtrisés</strong> : C#, Python, C, C++</li>
+<li><strong>Familier</strong> : TypeScript, JavaScript, Scala, Go, SQL,
+LUA, Shell</li>
 </ul>
 <h4 id="backend-architecture-distribuée">Backend &amp; Architecture
 Distribuée</h4>
 <ul>
-<li><strong>Frameworks &amp; APIs</strong> : FastAPI, Flask, gRPC, REST,
-GraphQL</li>
-<li><strong>Systèmes distribués</strong> : Apache Kafka, RabbitMQ,
-Apache Flink, Apache Spark</li>
-<li><strong>Architectures</strong> : Microservices, Event-Driven
-Architecture, CQRS</li>
-<li><strong>Cache &amp; Performance</strong> : Redis, Memcached,
-CDN</li>
+<li><strong>Frameworks &amp; APIs</strong> : .NET, ASP.NET, NestJS,
+gRPC, REST</li>
+<li><strong>Messagerie &amp; événements</strong> : RabbitMQ,
+MassTransit, MQTT</li>
+<li><strong>Architectures</strong> : Microservices, Event-Driven, CQRS,
+SOA</li>
+<li><strong>Edge computing</strong> : agents embarqués, résilience
+déconnectée, synchronisation cloud/edge</li>
 </ul>
 <h4 id="bases-de-données">Bases de Données</h4>
 <ul>
-<li><strong>Relationnelles</strong> : PostgreSQL, SQLServer</li>
-<li><strong>Graph</strong> : Janusgraph, neo4j</li>
-<li><strong>NoSQL</strong> : MongoDB, Cassandra, Elasticsearch,
-DynamoDB</li>
+<li><strong>Relationnelles</strong> : PostgreSQL, SQL Server, T-SQL</li>
+<li><strong>Graphe</strong> : neo4j, JanusGraph, Gremlin</li>
+<li><strong>Séries temporelles</strong> : InfluxDB</li>
+<li><strong>Cache</strong> : Redis</li>
 </ul>
 <h4 id="cloud-infrastructure">Cloud &amp; Infrastructure</h4>
 <ul>
-<li><strong>Cloud Providers</strong> : AWS, GCP, Azure</li>
-<li><strong>Conteneurisation &amp; Orchestration</strong> : Docker,
-Kubernetes, Helm</li>
-<li><strong>CI/CD</strong> : GitHub Actions, GitLab CI, Jenkins,
-ArgoCD</li>
-<li><strong>Infrastructure as Code</strong> : Terraform, Ansible</li>
+<li><strong>Conteneurisation</strong> : Docker, Kubernetes</li>
+<li><strong>CI/CD</strong> : GitHub Actions, GitLab CI, Azure
+DevOps</li>
+<li><strong>Administration</strong> : Linux, nginx, varnish</li>
+<li><strong>Infrastructure as Code</strong> : Terraform</li>
 </ul>
 <h4 id="observabilité-fiabilité">Observabilité &amp; Fiabilité</h4>
 <ul>
 <li><strong>Monitoring &amp; Alerting</strong> : Prometheus,
 Grafana</li>
 <li><strong>Logging</strong> : Loki</li>
-<li><strong>Tracing</strong> : OpenTelemetry, Jaeger, Zipkin</li>
+<li><strong>Tracing</strong> : OpenTelemetry, Jaeger</li>
 </ul>
-<h4 id="bonnes-pratiques-méthodologies">Bonnes Pratiques &amp;
-Méthodologies</h4>
+<h4 id="conception-outillage">Conception &amp; Outillage</h4>
 <ul>
-<li><strong>Qualité</strong> : TDD, Clean Code, Code Review</li>
-<li><strong>Conception</strong> : Design Patterns, DDD (Domain-Driven
-Design), SOLID</li>
-<li><strong>Agilité</strong> : Scrum, Kanban</li>
-<li><strong>Versioning</strong> : Git, GitHub</li>
+<li><strong>Modélisation</strong> : DDD, Design Patterns, SOLID, DSL
+design</li>
+<li><strong>Génération de code</strong> : Roslyn Source Generation,
+OGM</li>
+<li><strong>UI &amp; outils</strong> : WPF, VueJs, Angular</li>
+<li><strong>Qualité</strong> : TDD, Code Review, tests unitaires &amp;
+intégration</li>
+<li><strong>Versioning</strong> : Git, GitHub, GitLab</li>
 </ul>
-<table>
-<tr>
-<th>
-Langages
-</th>
-<td>
-<code>C#</code> <code>TypeScript</code> <code>Shell</code>
-<code>SQL</code>
-</td>
-</tr>
-<tr>
-<th>
-.net
-</th>
-<td>
-<code>API</code> <code>MVC</code> <code>ASP</code>
-<code>microservices</code> <code>EF</code>
-</td>
-</tr>
-<tr>
-<th>
-Data
-</th>
-<td>
-<code>Neo4j</code> <code>Janusgraph</code> <code>SQL</code>
-</td>
-</tr>
-<tr>
-<th>
-Front
-</th>
-<td>
-<code>Angular</code>
-</td>
-</tr>
-<tr>
-<th>
-Outils
-</th>
-<td>
-<code>docker</code> <code>compose</code> <code>dockerfile</code>
-<code>git</code> <code>Azure Devops</code> <code>Sonar</code>
-</td>
-</tr>
-</table>
+<h4 id="méthodologies">Méthodologies</h4>
+<ul>
+<li>Scrum, Kanban, Agile</li>
+</ul>
 <h2 id="expériences">Expériences</h2>
 <section id="schneider-electricmontpellier" class="experience">
 <h3><span class="org">Schneider Electric</span><span class="meta">Montpellier</span></h3>
@@ -1137,19 +1097,22 @@ Outils
 Juin 2024 – présent</h4>
 <pre>Conception d&#39;une solution innovante pour la configuration d&#39;équipements électriques industriels (norme IEC61850/SCL). La plateforme, articulée autour de microservices conteneurisés, d&#39;un bus d&#39;événements et d&#39;une base de données graphe, constitue le référentiel unique pour le développement de projets clients.</pre>
 <ul>
-<li><strong>Graph database</strong> : R&amp;D et mise en œuvre d’une
-base de données graphe (neo4j puis JanusGraph) comme source de vérité
-unique — modélisation du standard IEC61850/SCL sous forme de graphe
+<li><strong>Graph database</strong> : Responsable de la R&amp;D et de
+l’évaluation des solutions de base de données graphe (neo4j puis
+JanusGraph) — modélisation du standard IEC61850/SCL sous forme de graphe
 indexé, définition d’un modèle de graphe pour la configuration par
-template</li>
-<li><strong>Graph OGM métier</strong> : Conception et développement d’un
-OGM (Object Graph Mapper) spécifique au domaine, encapsulant la
-complexité du schéma de graphe et exposant une API fluente aux services
-métiers</li>
+template — <strong>graphes métiers atteignant ~5 millions de sommets et
+arêtes</strong></li>
+<li><strong>Graph OGM métier</strong> : Conception et développement en
+autonomie d’un OGM (Object Graph Mapper) spécifique au domaine,
+encapsulant la complexité du schéma de graphe et exposant une API
+fluente aux services métiers — <strong>formation et accompagnement de
+l’équipe</strong> sur l’utilisation et l’extension de l’OGM</li>
 <li><strong>Génération de code</strong> : Développement d’outils
 internes basés sur la <strong>génération de source Roslyn</strong> pour
 automatiser la production de mappings, de requêtes Gremlin et de DTOs à
-partir des modèles de domaine</li>
+partir des modèles de domaine — <strong>référent technique</strong> sur
+le sujet au sein de l’équipe</li>
 <li><strong>Microservices &amp; événements</strong> : Architecture
 microservices conteneurisée (Docker), orchestration des flux métiers via
 <strong>MassTransit / RabbitMQ</strong> (sagas, publish/subscribe,
