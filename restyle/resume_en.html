@@ -128,8 +128,11 @@ color: var(--fg);
 pre {
 font-family: inherit;
 font-size: inherit;
-background: none;
+background: var(--bg-alt);
 border: none;
+border-left: 3px solid var(--accent);
+border-radius: 4px;
+padding: 0.6rem 0.9rem;
 white-space: pre-wrap;
 text-align: justify;
 margin: 0 0 0.75rem;
@@ -193,7 +196,7 @@ color: #333 !important;
 padding: 0 .2em;
 border: 1px solid #dedede;
 }
-pre { background: #fff; }
+pre { background: #fff; border-left-color: #94a3b8; text-align: justify; }
 pre code { background-color: white !important; overflow: visible; }
 }
 
