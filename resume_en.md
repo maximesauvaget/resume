@@ -3,7 +3,7 @@ title: Maxime Sauvaget
 lang: en
 ---
 
-###### [ Montpellier ] - [ sauvaget.maxime@gmail.com ]()
+###### [ Montpellier ] - [ sauvaget.maxime@gmail.com ]
 ### Backend Software Engineer — APIs · Distributed Systems · R&D
 
 <pre>Backend software engineer with 10+ years of experience designing and developing complex distributed systems, APIs, and industrial IIoT platforms. Comfortable taking full ownership of R&D topics — DSL design, graph databases, code generation — and transferring that knowledge to the team. Experience in demanding environments: software vendors, consulting firms, and large industrial groups (GE, Schneider Electric).</pre>
