@@ -98,6 +98,20 @@ li {
   text-align: justify;
 }
 
+/* ---------- Skills grid ---------- */
+.skills {
+  columns: 2;
+  column-gap: 2rem;
+}
+.skills h4 {
+  break-after: avoid;
+  column-break-after: avoid;
+}
+.skills ul {
+  break-inside: avoid;
+  margin-bottom: 0.5rem;
+}
+
 /* ---------- Horizontal rule ---------- */
 hr {
   border: 0;
@@ -198,7 +212,7 @@ img { max-width: 100%; border: 0; }
     padding: 0 .2em;
     border: 1px solid #dedede;
   }
-  pre { background: #fff; border-left-color: #94a3b8;   text-align: justify; }
+  pre { background: #fff; border-left-color: #94a3b8; border-radius: 0px; text-align: justify; }
   pre code { background-color: white !important; overflow: visible; }
 }
 

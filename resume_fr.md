@@ -9,14 +9,17 @@ lang: fr
 <pre>Ingénieur logiciel backend avec plus de 10 ans d'expérience dans la conception et le développement de systèmes distribués complexes, d'APIs et de plateformes IIoT industrielles. Habitué à prendre en charge des sujets de R&D en autonomie — conception de DSL, bases de données graphe, génération de code — et à en assurer le transfert technique auprès des équipes. Expériences dans des contextes exigeants : éditeurs de logiciels, ESN, grands groupes industriels (GE, Schneider Electric).</pre>
 
 ## Compétences
-```Analyse fonctionnelle```
-```Conception technique```
-```Administration système```
+```Architecture système```
+```Leadership technique```
 ```R&D```
+```Conception de DSL```
+```Edge computing```
+
+<div class="skills">
 
 #### Langages de Programmation
-- **Maîtrisés** : C#, Python, C, C++
-- **Familier** : TypeScript, JavaScript, Scala, Go, SQL, LUA, Shell
+- **Maîtrisés** : C#, TypeScript, Shell
+- **Familier** : C, SQL, LUA
 
 #### Backend & Architecture Distribuée
 - **Frameworks & APIs** : .NET, ASP.NET, NestJS, gRPC, REST
@@ -26,30 +29,25 @@ lang: fr
 
 #### Bases de Données
 - **Relationnelles** : PostgreSQL, SQL Server, T-SQL
-- **Graphe** : neo4j, JanusGraph, Gremlin
+- **Graphe** : JanusGraph, Gremlin, neo4j
 - **Séries temporelles** : InfluxDB
-- **Cache** : Redis
 
-#### Cloud & Infrastructure
-- **Conteneurisation** : Docker, Kubernetes
-- **CI/CD** : GitHub Actions, GitLab CI, Azure DevOps
+#### Cloud, Infrastructure & Observabilité
+- **Conteneurisation** : Docker
+- **CI/CD** : GitHub Actions, Azure DevOps
 - **Administration** : Linux, nginx, varnish
-- **Infrastructure as Code** : Terraform
-
-#### Observabilité & Fiabilité
 - **Monitoring & Alerting** : Prometheus, Grafana
-- **Logging** : Loki
-- **Tracing** : OpenTelemetry, Jaeger
+- **Logging & Tracing** : OpenTelemetry, Loki
 
 #### Conception & Outillage
-- **Modélisation** : DDD, Design Patterns, SOLID, DSL design
-- **Génération de code** : Roslyn Source Generation, OGM
+- **Modélisation** : DDD, Design Patterns, SOLID, DSL design, grammaires PEG (PEG.js)
+- **Génération de code** : Roslyn Source Generation, T4
 - **UI & outils** : WPF, VueJs, Angular
 - **Qualité** : TDD, Code Review, tests unitaires & intégration
-- **Versioning** : Git, GitHub, GitLab
+- **Versioning** : Git, GitHub
+- **Méthodologies** : Scrum, Kanban, Agile
 
-#### Méthodologies
-- Scrum, Kanban, Agile
+</div>
 
 
 ## Expériences
@@ -63,7 +61,7 @@ lang: fr
 - **Graph OGM métier** : Conception et développement en autonomie d'un OGM (Object Graph Mapper) spécifique au domaine, encapsulant la complexité du schéma de graphe et exposant une API fluente aux services métiers — **formation et accompagnement de l'équipe** sur l'utilisation et l'extension de l'OGM
 - **Génération de code** : Développement d'outils internes basés sur la **génération de source Roslyn** pour automatiser la production de mappings, de requêtes Gremlin et de DTOs à partir des modèles de domaine — **référent technique** sur le sujet au sein de l'équipe
 - **Microservices & événements** : Architecture microservices conteneurisée (Docker), orchestration des flux métiers via **MassTransit / RabbitMQ** (sagas, publish/subscribe, gestion des erreurs et retry)
-- Développement des APIs REST (.NET 8 / C#), écriture des tests unitaires et d'intégration
+- Développement des APIs REST (.NET / C#), écriture des tests unitaires et d'intégration
 
 </div>
 

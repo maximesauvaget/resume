@@ -18,7 +18,7 @@ the HTML to PDF - ensuring a reproducible, pixel-consistent output on any machin
 With Nix installed:
 
 ```shell
-nix build
+wsl -- bash -c "nix build .#default && cp -rfL result/resume/* build/"   
 ```
 
 Outputs are placed in `result/`:

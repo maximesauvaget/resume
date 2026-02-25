@@ -19,7 +19,7 @@
 
         buildInputs = with pkgs; [
           pandoc
-          wkhtmltopdf-bin
+          chromium
         ];
 
         buildPhase = ''
@@ -33,30 +33,35 @@
           -c style.css --self-contained \
           -o resume_en.html
 
-          wkhtmltopdf --enable-local-file-access \
-          resume_fr.html \
-          resume_fr.pdf
+          chromium --headless --no-sandbox --disable-gpu \
+          --no-pdf-header-footer \
+          --print-to-pdf=resume_fr.pdf resume_fr.html
 
-          wkhtmltopdf --enable-local-file-access \
-          resume_en.html \
-          resume_en.pdf
+          chromium --headless --no-sandbox --disable-gpu \
+          --no-pdf-header-footer \
+          --print-to-pdf=resume_en.pdf resume_en.html
         '';
 
-      in with pkgs; {
+      in with pkgs; let
+        resumePkg = stdenvNoCC.mkDerivation {
+          inherit buildInputs buildPhase;
+          name = "resume_md";
+          src = ./.;
+          installPhase = ''
+            mkdir -p $out/resume
+            cp index.html $out/resume/
+            cp resume_fr.html resume_en.html $out/resume/
+            cp resume_fr.pdf  resume_en.pdf  $out/resume/
+          '';
+        };
+      in {
 
         packages = {
-          default = stdenvNoCC.mkDerivation {
-            inherit buildInputs buildPhase;
-            name = "resume_md";
-            src = ./.;
-            installPhase = ''
-              mkdir -p $out/resume
-              cp index.html $out/resume/
-              cp resume_fr.html resume_en.html $out/resume/
-              cp resume_fr.pdf  resume_en.pdf  $out/resume/
-            '';
-          };
+          default = resumePkg;
         };
+
+        # Nix 2.6 compatibility: nix build resolves defaultPackage.${system}
+        defaultPackage = resumePkg;
 
         checks = {
           default = stdenvNoCC.mkDerivation {

@@ -9,14 +9,17 @@ lang: en
 <pre>Backend software engineer with 10+ years of experience designing and developing complex distributed systems, APIs, and industrial IIoT platforms. Comfortable taking full ownership of R&D topics — DSL design, graph databases, code generation — and transferring that knowledge to the team. Experience in demanding environments: software vendors, consulting firms, and large industrial groups (GE, Schneider Electric).</pre>
 
 ## Skills
-```Functional analysis```
-```Technical design```
-```System administration```
+```System architecture```
+```Technical leadership```
 ```R&D```
+```DSL design```
+```Edge computing```
+
+<div class="skills">
 
 #### Programming Languages
-- **Proficient**: C#, Python, C, C++
-- **Familiar**: TypeScript, JavaScript, Scala, Go, SQL, LUA, Shell
+- **Proficient**: C#, TypeScript, Shell
+- **Familiar**: C, SQL, LUA
 
 #### Backend & Distributed Architecture
 - **Frameworks & APIs**: .NET, ASP.NET, NestJS, gRPC, REST
@@ -26,30 +29,25 @@ lang: en
 
 #### Databases
 - **Relational**: PostgreSQL, SQL Server, T-SQL
-- **Graph**: neo4j, JanusGraph, Gremlin
+- **Graph**: JanusGraph, Gremlin, neo4j
 - **Time series**: InfluxDB
-- **Cache**: Redis
 
-#### Cloud & Infrastructure
-- **Containerization**: Docker, Kubernetes
-- **CI/CD**: GitHub Actions, GitLab CI, Azure DevOps
+#### Cloud, Infrastructure & Observability
+- **Containerization**: Docker
+- **CI/CD**: GitHub Actions, Azure DevOps
 - **Administration**: Linux, nginx, varnish
-- **Infrastructure as Code**: Terraform
-
-#### Observability & Reliability
 - **Monitoring & Alerting**: Prometheus, Grafana
-- **Logging**: Loki
-- **Tracing**: OpenTelemetry, Jaeger
+- **Logging & Tracing**: OpenTelemetry, Loki
 
 #### Design & Tooling
-- **Modelling**: DDD, Design Patterns, SOLID, DSL design
-- **Code generation**: Roslyn Source Generation, OGM
+- **Modelling**: DDD, Design Patterns, SOLID, DSL design, PEG grammars (PEG.js)
+- **Code generation**: Roslyn Source Generation, T4
 - **UI & tools**: WPF, VueJs, Angular
 - **Quality**: TDD, Code Review, unit & integration testing
-- **Versioning**: Git, GitHub, GitLab
+- **Versioning**: Git, GitHub
+- **Methodologies**: Scrum, Kanban, Agile
 
-#### Methodologies
-- Scrum, Kanban, Agile
+</div>
 
 
 ## Experience
