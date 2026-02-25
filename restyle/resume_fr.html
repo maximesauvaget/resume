@@ -108,6 +108,19 @@ margin-bottom: 0.35rem;
 text-align: justify;
 }
 
+.skills {
+columns: 2;
+column-gap: 2rem;
+}
+.skills h4 {
+break-after: avoid;
+column-break-after: avoid;
+}
+.skills ul {
+break-inside: avoid;
+margin-bottom: 0.5rem;
+}
+
 hr {
 border: 0;
 border-top: 1px solid var(--border);
@@ -196,7 +209,7 @@ color: #333 !important;
 padding: 0 .2em;
 border: 1px solid #dedede;
 }
-pre { background: #fff; border-left-color: #94a3b8; text-align: justify; }
+pre { background: #fff; border-left-color: #94a3b8; border-radius: 0px; text-align: justify; }
 pre code { background-color: white !important; overflow: visible; }
 }
 
@@ -245,13 +258,14 @@ html[data-theme="light"] {
 Logiciel Backend — APIs · Systèmes Distribués · R&amp;D</h3>
 <pre>Ingénieur logiciel backend avec plus de 10 ans d&#39;expérience dans la conception et le développement de systèmes distribués complexes, d&#39;APIs et de plateformes IIoT industrielles. Habitué à prendre en charge des sujets de R&amp;D en autonomie — conception de DSL, bases de données graphe, génération de code — et à en assurer le transfert technique auprès des équipes. Expériences dans des contextes exigeants : éditeurs de logiciels, ESN, grands groupes industriels (GE, Schneider Electric).</pre>
 <h2 id="compétences">Compétences</h2>
-<p><code>Analyse fonctionnelle</code> <code>Conception technique</code>
-<code>Administration système</code> <code>R&amp;D</code></p>
+<p><code>Architecture système</code> <code>Leadership technique</code>
+<code>R&amp;D</code> <code>Conception de DSL</code>
+<code>Edge computing</code></p>
+<div class="skills">
 <h4 id="langages-de-programmation">Langages de Programmation</h4>
 <ul>
-<li><strong>Maîtrisés</strong> : C#, Python, C, C++</li>
-<li><strong>Familier</strong> : TypeScript, JavaScript, Scala, Go, SQL,
-LUA, Shell</li>
+<li><strong>Maîtrisés</strong> : C#, TypeScript, Shell</li>
+<li><strong>Familier</strong> : C, SQL, LUA</li>
 </ul>
 <h4 id="backend-architecture-distribuée">Backend &amp; Architecture
 Distribuée</h4>
@@ -268,40 +282,32 @@ déconnectée, synchronisation cloud/edge</li>
 <h4 id="bases-de-données">Bases de Données</h4>
 <ul>
 <li><strong>Relationnelles</strong> : PostgreSQL, SQL Server, T-SQL</li>
-<li><strong>Graphe</strong> : neo4j, JanusGraph, Gremlin</li>
+<li><strong>Graphe</strong> : JanusGraph, Gremlin, neo4j</li>
 <li><strong>Séries temporelles</strong> : InfluxDB</li>
-<li><strong>Cache</strong> : Redis</li>
 </ul>
-<h4 id="cloud-infrastructure">Cloud &amp; Infrastructure</h4>
+<h4 id="cloud-infrastructure-observabilité">Cloud, Infrastructure &amp;
+Observabilité</h4>
 <ul>
-<li><strong>Conteneurisation</strong> : Docker, Kubernetes</li>
-<li><strong>CI/CD</strong> : GitHub Actions, GitLab CI, Azure
-DevOps</li>
+<li><strong>Conteneurisation</strong> : Docker</li>
+<li><strong>CI/CD</strong> : GitHub Actions, Azure DevOps</li>
 <li><strong>Administration</strong> : Linux, nginx, varnish</li>
-<li><strong>Infrastructure as Code</strong> : Terraform</li>
-</ul>
-<h4 id="observabilité-fiabilité">Observabilité &amp; Fiabilité</h4>
-<ul>
 <li><strong>Monitoring &amp; Alerting</strong> : Prometheus,
 Grafana</li>
-<li><strong>Logging</strong> : Loki</li>
-<li><strong>Tracing</strong> : OpenTelemetry, Jaeger</li>
+<li><strong>Logging &amp; Tracing</strong> : OpenTelemetry, Loki</li>
 </ul>
 <h4 id="conception-outillage">Conception &amp; Outillage</h4>
 <ul>
 <li><strong>Modélisation</strong> : DDD, Design Patterns, SOLID, DSL
-design</li>
+design, grammaires PEG (PEG.js)</li>
 <li><strong>Génération de code</strong> : Roslyn Source Generation,
-OGM</li>
+T4</li>
 <li><strong>UI &amp; outils</strong> : WPF, VueJs, Angular</li>
 <li><strong>Qualité</strong> : TDD, Code Review, tests unitaires &amp;
 intégration</li>
-<li><strong>Versioning</strong> : Git, GitHub, GitLab</li>
+<li><strong>Versioning</strong> : Git, GitHub</li>
+<li><strong>Méthodologies</strong> : Scrum, Kanban, Agile</li>
 </ul>
-<h4 id="méthodologies">Méthodologies</h4>
-<ul>
-<li>Scrum, Kanban, Agile</li>
-</ul>
+</div>
 <h2 id="expériences">Expériences</h2>
 <section id="schneider-electricmontpellier" class="experience">
 <h3><span class="org">Schneider Electric</span><span class="meta">Montpellier</span></h3>
@@ -329,7 +335,7 @@ le sujet au sein de l’équipe</li>
 microservices conteneurisée (Docker), orchestration des flux métiers via
 <strong>MassTransit / RabbitMQ</strong> (sagas, publish/subscribe,
 gestion des erreurs et retry)</li>
-<li>Développement des APIs REST (.NET 8 / C#), écriture des tests
+<li>Développement des APIs REST (.NET / C#), écriture des tests
 unitaires et d’intégration</li>
 </ul>
 </section>
