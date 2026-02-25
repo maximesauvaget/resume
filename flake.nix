@@ -20,6 +20,7 @@
         buildInputs = with pkgs; [
           pandoc
           chromium
+          fontconfig
         ];
 
         buildPhase = ''
@@ -33,11 +34,17 @@
           -c style.css --self-contained \
           -o resume_en.html
 
+          export FONTCONFIG_FILE=${pkgs.fontconfig.out}/etc/fonts/fonts.conf
+
           chromium --headless --no-sandbox --disable-gpu \
+          --disable-dbus --disable-dev-shm-usage \
+          --run-all-compositor-stages-before-draw \
           --no-pdf-header-footer \
           --print-to-pdf=resume_fr.pdf resume_fr.html
 
           chromium --headless --no-sandbox --disable-gpu \
+          --disable-dbus --disable-dev-shm-usage \
+          --run-all-compositor-stages-before-draw \
           --no-pdf-header-footer \
           --print-to-pdf=resume_en.pdf resume_en.html
         '';
