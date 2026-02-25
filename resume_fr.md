@@ -3,7 +3,7 @@ title: Maxime Sauvaget
 lang: fr
 ---
 
-###### [ Montpellier ] - [ sauvaget.maxime@gmail.com ]()
+###### [ Montpellier ] - [ sauvaget.maxime@gmail.com ]
 ### Ingénieur Logiciel Backend — APIs · Systèmes Distribués · R&D
 
 <pre>Ingénieur logiciel backend avec plus de 10 ans d'expérience dans la conception et le développement de systèmes distribués complexes, d'APIs et de plateformes IIoT industrielles. Habitué à prendre en charge des sujets de R&D en autonomie — conception de DSL, bases de données graphe, génération de code — et à en assurer le transfert technique auprès des équipes. Expériences dans des contextes exigeants : éditeurs de logiciels, ESN, grands groupes industriels (GE, Schneider Electric).</pre>
