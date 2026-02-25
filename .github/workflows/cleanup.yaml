@@ -1,0 +1,31 @@
+name: Cleanup Branch Deployment
+
+on:
+  delete:
+
+jobs:
+  cleanup:
+    # Only run for branch deletions, not tag deletions
+    if: github.event.ref_type == 'branch' && github.event.ref != 'master'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          fetch-depth: 1
+
+      - name: Delete branch folder if it exists
+        run: |
+          BRANCH_NAME="${{ github.event.ref }}"
+          if [ -d "$BRANCH_NAME" ]; then
+            echo "Found deployment folder for '$BRANCH_NAME', deleting..."
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git rm -rf "$BRANCH_NAME"
+            git commit -m "chore: remove deployment for deleted branch '$BRANCH_NAME'"
+            git push
+          else
+            echo "No deployment folder found for '$BRANCH_NAME', nothing to do."
+          fi
