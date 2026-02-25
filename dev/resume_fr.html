@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Maxime Sauvaget</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+:root {
+--fg: #0f172a; 
+--muted: #475569; 
+--bg: #ffffff;
+--bg-alt: #f8fafc; 
+--accent: #2563eb; 
+--border: #e2e8f0; 
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html {
+font-size: 16px;
+-webkit-text-size-adjust: 100%;
+}
+body {
+color: var(--fg);
+background: var(--bg);
+font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Ubuntu,
+Cantarell, "Helvetica Neue", Arial, sans-serif;
+line-height: 1.6;
+margin: 0 auto;
+max-width: 820px;
+padding: 2rem 1.25rem;
+}
+
+a {
+color: var(--accent);
+text-decoration: none;
+}
+a:hover, a:active { text-decoration: underline; }
+a:focus { outline: thin dotted; }
+
+h1, h2, h3, h4, h5, h6 {
+margin: 0;
+line-height: 1.25;
+font-weight: bold;
+}
+h1 {
+font-size: 2rem;
+font-weight: 800;
+letter-spacing: -0.02em;
+margin-bottom: 0.35rem;
+color: var(--fg);
+}
+h2 {
+font-size: 1.125rem;
+text-transform: uppercase;
+color: var(--muted);
+margin: 2rem 0 0.75rem;
+letter-spacing: 0.02em;
+border-bottom: 1px solid var(--border);
+}
+h3 {
+font-size: 1rem;
+margin: 1rem 0 0.25rem;
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+color: var(--fg);
+}
+h3 .org { font-weight: 700; }
+h3 .meta { color: var(--muted); font-weight: 500; }
+h4 {
+font-size: 0.9rem;
+color: var(--muted);
+font-weight: 600;
+margin: 0.15rem 0 0.5rem;
+}
+h5, h6 {
+font-size: 0.85rem;
+color: var(--muted);
+margin: 0.25rem 0;
+}
+
+b, strong { font-weight: bold; }
+em, dfn { font-style: italic; }
+small { font-size: 80%; }
+p { margin: 0.25rem 0 0.75rem; }
+
+ul { margin: 0.25rem 0 0.75rem 1.1rem; padding: 0; }
+ol { padding-left: 1.75rem; margin: 0.25rem 0 0.75rem; }
+li {
+margin-bottom: 0.35rem;
+text-align: justify;
+}
+
+.skills {
+columns: 2;
+column-gap: 2rem;
+}
+.skills h4 {
+break-after: avoid;
+column-break-after: avoid;
+}
+.skills ul {
+break-inside: avoid;
+margin-bottom: 0.5rem;
+}
+
+hr {
+border: 0;
+border-top: 1px solid var(--border);
+margin: 1.25rem 0;
+}
+
+code, tt {
+font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+"Liberation Mono", "Courier New", monospace;
+font-size: 0.85em;
+padding: 0.1em 0.4em;
+background-color: var(--bg-alt);
+border: 1px solid var(--border);
+border-radius: 4px;
+color: var(--fg);
+}
+
+pre {
+font-family: inherit;
+font-size: inherit;
+background: var(--bg-alt);
+border: none;
+border-left: 3px solid var(--accent);
+border-radius: 4px;
+padding: 0.6rem 0.9rem;
+white-space: pre-wrap;
+text-align: justify;
+margin: 0 0 0.75rem;
+}
+pre code, pre tt {
+background: transparent;
+border: 0;
+padding: 0;
+font-family: inherit;
+font-size: inherit;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+font: inherit;
+margin: 0.75rem 0;
+width: 100%;
+}
+table th {
+font-weight: bold;
+border: 1px solid var(--border);
+padding: 6px 13px;
+background-color: var(--bg-alt);
+}
+table td {
+border: 1px solid var(--border);
+padding: 6px 13px;
+}
+table tr { border-top: 1px solid var(--border); background-color: var(--bg); }
+table tr:nth-child(2n) { background-color: var(--bg-alt); }
+
+img { max-width: 100%; border: 0; }
+
+@media print {
+
+a[href^="http"]::after {
+content: " (" attr(href) ")";
+color: var(--muted);
+font-size: 0.9em;
+}
+body {
+max-width: 100%;
+padding: 0.5cm 1cm;
+border: 0;
+background: #fff;
+font-size: 13px;
+}
+
+h2, h3, h4 { break-after: avoid; }
+
+.experience {
+break-inside: avoid;
+page-break-inside: avoid;
+}
+
+li { margin-bottom: 0.25rem; }
+
+
+.skills li { margin-bottom: 0.1rem; }
+.skills ul { margin-bottom: 0.3rem; }
+.skills h4 { margin: 0.5rem 0 0.2rem; }
+img, pre, blockquote, table, figure { page-break-inside: avoid; }
+code {
+background-color: #fff;
+color: #333 !important;
+padding: 0 .2em;
+border: 1px solid #dedede;
+}
+pre { background: #fff; border-left-color: #94a3b8; border-radius: 0px; text-align: justify; }
+pre code { background-color: white !important; overflow: visible; }
+}
+
+body, h1, h2, h3, h4, h5, h6, code, tt, pre, table, hr {
+transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+--fg: #e6edf3;
+--muted: #7d8590;
+--bg: #0d1117;
+--bg-alt: #161b22;
+--accent: #58a6ff;
+--border: #30363d;
+}
+}
+
+html[data-theme="dark"] {
+--fg: #e6edf3;
+--muted: #7d8590;
+--bg: #0d1117;
+--bg-alt: #161b22;
+--accent: #58a6ff;
+--border: #30363d;
+}
+html[data-theme="light"] {
+--fg: #0f172a;
+--muted: #475569;
+--bg: #ffffff;
+--bg-alt: #f8fafc;
+--accent: #2563eb;
+--border: #e2e8f0;
+}
+</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Maxime Sauvaget</h1>
+</header>
+<h6 id="montpellier---sauvaget.maximegmail.com">[ Montpellier ] - [
+sauvaget.maxime@gmail.com ]</h6>
+<h3 id="ingénieur-logiciel-backend-apis-systèmes-distribués-rd">Ingénieur
+Logiciel Backend — APIs · Systèmes Distribués · R&amp;D</h3>
+<pre>Ingénieur logiciel backend avec plus de 10 ans d&#39;expérience dans la conception et le développement de systèmes distribués complexes, d&#39;APIs et de plateformes IIoT industrielles. Habitué à prendre en charge des sujets de R&amp;D en autonomie — conception de DSL, bases de données graphe, génération de code — et à en assurer le transfert technique auprès des équipes. Expériences dans des contextes exigeants : éditeurs de logiciels, ESN, grands groupes industriels (GE, Schneider Electric).</pre>
+<h2 id="compétences">Compétences</h2>
+<p><code>Architecture système</code> <code>Leadership technique</code>
+<code>R&amp;D</code> <code>Conception de DSL</code>
+<code>Edge computing</code></p>
+<div class="skills">
+<h4 id="langages-de-programmation">Langages de Programmation</h4>
+<ul>
+<li><strong>Maîtrisés</strong> : C#, TypeScript, Shell</li>
+<li><strong>Familier</strong> : C, SQL, LUA</li>
+</ul>
+<h4 id="backend-architecture-distribuée">Backend &amp; Architecture
+Distribuée</h4>
+<ul>
+<li><strong>Frameworks &amp; APIs</strong> : .NET, ASP.NET, NestJS,
+gRPC, REST</li>
+<li><strong>Messagerie &amp; événements</strong> : RabbitMQ,
+MassTransit, MQTT</li>
+<li><strong>Architectures</strong> : Microservices, Event-Driven, CQRS,
+SOA</li>
+<li><strong>Edge computing</strong> : agents embarqués, résilience
+déconnectée, synchronisation cloud/edge</li>
+</ul>
+<h4 id="bases-de-données">Bases de Données</h4>
+<ul>
+<li><strong>Relationnelles</strong> : PostgreSQL, SQL Server, T-SQL</li>
+<li><strong>Graphe</strong> : JanusGraph, Gremlin, neo4j</li>
+<li><strong>Séries temporelles</strong> : InfluxDB</li>
+</ul>
+<h4 id="cloud-infrastructure-observabilité">Cloud, Infrastructure &amp;
+Observabilité</h4>
+<ul>
+<li><strong>Conteneurisation</strong> : Docker</li>
+<li><strong>CI/CD</strong> : GitHub Actions, Azure DevOps</li>
+<li><strong>Administration</strong> : Linux, nginx, varnish</li>
+<li><strong>Monitoring &amp; Alerting</strong> : Prometheus,
+Grafana</li>
+<li><strong>Logging &amp; Tracing</strong> : OpenTelemetry, Loki</li>
+</ul>
+<h4 id="conception-outillage">Conception &amp; Outillage</h4>
+<ul>
+<li><strong>Modélisation</strong> : DDD, Design Patterns, SOLID, DSL
+design, grammaires PEG (PEG.js)</li>
+<li><strong>Génération de code</strong> : Roslyn Source Generation,
+T4</li>
+<li><strong>UI &amp; outils</strong> : WPF, VueJs, Angular</li>
+<li><strong>Qualité</strong> : TDD, Code Review, tests unitaires &amp;
+intégration</li>
+<li><strong>Versioning</strong> : Git, GitHub</li>
+<li><strong>Méthodologies</strong> : Scrum, Kanban, Agile</li>
+</ul>
+</div>
+<h2 id="expériences">Expériences</h2>
+<section id="schneider-electricmontpellier" class="experience">
+<h3><span class="org">Schneider Electric</span><span class="meta">Montpellier</span></h3>
+<h4 id="développeur-backend-juin-2024-présent">Développeur backend ·
+Juin 2024 – présent</h4>
+<pre>Conception d&#39;une solution innovante pour la configuration d&#39;équipements électriques industriels (norme IEC61850/SCL). La plateforme, articulée autour de microservices conteneurisés, d&#39;un bus d&#39;événements et d&#39;une base de données graphe, constitue le référentiel unique pour le développement de projets clients.</pre>
+<ul>
+<li><strong>Graph database</strong> : Responsable de la R&amp;D et de
+l’évaluation des solutions de base de données graphe (neo4j puis
+JanusGraph) — modélisation du standard IEC61850/SCL sous forme de graphe
+indexé, définition d’un modèle de graphe pour la configuration par
+template — <strong>graphes métiers atteignant ~5 millions de sommets et
+arêtes</strong></li>
+<li><strong>Graph OGM métier</strong> : Conception et développement en
+autonomie d’un OGM (Object Graph Mapper) spécifique au domaine,
+encapsulant la complexité du schéma de graphe et exposant une API
+fluente aux services métiers — <strong>formation et accompagnement de
+l’équipe</strong> sur l’utilisation et l’extension de l’OGM</li>
+<li><strong>Génération de code</strong> : Développement d’outils
+internes basés sur la <strong>génération de source Roslyn</strong> pour
+automatiser la production de mappings, de requêtes Gremlin et de DTOs à
+partir des modèles de domaine — <strong>référent technique</strong> sur
+le sujet au sein de l’équipe</li>
+<li><strong>Microservices &amp; événements</strong> : Architecture
+microservices conteneurisée (Docker), orchestration des flux métiers via
+<strong>MassTransit / RabbitMQ</strong> (sagas, publish/subscribe,
+gestion des erreurs et retry)</li>
+<li>Développement des APIs REST (.NET / C#), écriture des tests
+unitaires et d’intégration</li>
+</ul>
+</section>
+<hr>
+<section id="sport-découvertela-ciotat" class="experience">
+<h3><span class="org">Sport Découverte</span><span class="meta">La
+Ciotat</span></h3>
+<h4 id="développeur-fullstack-mars-2022-janvier-2024">Développeur
+fullstack · Mars 2022 – Janvier 2024</h4>
+<pre>Plateforme e-commerce de réservation d&#39;activités sportives et de loisirs en ligne.</pre>
+<ul>
+<li><strong>Connecteur channel manager</strong> : Conception et
+développement d’un service générique d’intégration entre le système de
+réservation interne et les distributeurs tiers (channel managers, APIs
+partenaires) — gestion des flux de disponibilités, synchronisation des
+réservations et réconciliation des données</li>
+<li><strong>Microservices &amp; événements</strong> : Développement des
+APIs et microservices en <strong>.NET 7 / C#</strong>, orchestration des
+flux asynchrones via <strong>MassTransit / RabbitMQ</strong>
+(publish/subscribe, gestion des erreurs et retry)</li>
+<li><strong>Back office</strong> : Maintenance et évolution du back
+office métier (ASP.NET, VueJs) — gestion des produits, des
+disponibilités et du suivi des réservations</li>
+<li><strong>Infrastructure &amp; CI/CD</strong> : Génération de la
+configuration serveur par le code, déploiement continu via <strong>Azure
+DevOps</strong> ; administration des serveurs Linux et de leurs services
+(<strong>nginx</strong>, <strong>varnish</strong>,
+<strong>docker</strong>)</li>
+</ul>
+</section>
+<hr>
+<section id="general-electricmontpellier" class="experience">
+<h3><span class="org">General Electric</span><span class="meta">Montpellier</span></h3>
+<h4 id="ingénieur-logiciel-rd-juillet-2019-février-2022">Ingénieur
+logiciel R&amp;D · Juillet 2019 – Février 2022</h4>
+<pre>Division spécialisée dans la conception hardware et software d&#39;équipements liés à la distribution et transformation d&#39;énergie. Conception et développement from scratch d&#39;une plateforme IIoT industrielle dédiée à la supervision, configuration et communication avec ces équipements.</pre>
+<ul>
+<li><strong>DSL &amp; modélisation d’équipements</strong> : Conception
+d’un DSL permettant la description au runtime d’équipements industriels
+— topologie, configuration, protocoles de communication et actions
+exposées à la plateforme ; interprété dynamiquement par les services
+backend (NestJS / C#)</li>
+<li><strong>Protocole MQTT</strong> : Définition du langage de
+communication MQTT adopté par l’ensemble de la plateforme — conception
+des topics, des schémas de payloads et des conventions de routage entre
+edge et cloud</li>
+<li><strong>Architecture microservices IIoT</strong> : Conception et
+développement collaboratif de l’architecture microservices cloud
+(NestJS, C#, PostgreSQL, InfluxDB) — APIs REST et gRPC, stockage des
+séries temporelles, gestion des états équipements</li>
+<li><strong>Plateforme edge</strong> : Conception et développement de
+l’agent edge embarqué (C, Docker) — communication bidirectionnelle avec
+les équipements via MQTT, synchronisation avec les services cloud et
+résilience en mode déconnecté</li>
+<li><strong>Modernisation legacy</strong> : Adaptation et intégration
+d’un service C# existant d’analyse des perturbations transitoires au
+sein de la nouvelle architecture microservices</li>
+</ul>
+</section>
+<hr>
+<section id="ubisoftmontpellier" class="experience">
+<h3><span class="org">Ubisoft</span><span class="meta">Montpellier</span></h3>
+<h4 id="programmeur-outils-septembre-2017-mars-2019">Programmeur outils
+· Septembre 2017 – Mars 2019</h4>
+<pre>Programmeur outils sur la production de Beyond Good &amp; Evil 2 (Montpellier Studio).</pre>
+<ul>
+<li>Développement d’outils internes en <strong>C# / WPF</strong> à
+destination des équipes de production — éditeur d’objets, éditeur
+d’animations</li>
+<li>Automation des pipelines d’intégration des assets de jeu via scripts
+<strong>LUA</strong> et macros, réduisant les tâches manuelles
+répétitives</li>
+</ul>
+</section>
+<hr>
+<section id="créative-atlantiquenantes" class="experience">
+<h3><span class="org">Créative Atlantique</span><span class="meta">Nantes</span></h3>
+<h4 id="ingénieur-logiciel-juillet-2016-juin-2017">Ingénieur logiciel ·
+Juillet 2016 – Juin 2017</h4>
+<ul>
+<li>Mission chez <em>Meteodyn</em> (ingénierie du vent et météorologie)
+— développement d’un frontend <strong>C# / WPF</strong> pour des outils
+de simulation d’éoliennes</li>
+</ul>
+</section>
+<hr>
+<section id="sopra-sterianantes" class="experience">
+<h3><span class="org">Sopra Steria</span><span class="meta">Nantes</span></h3>
+<h4 id="ingénieur-logiciel-septembre-2014-juin-2016">Ingénieur logiciel
+· Septembre 2014 – Juin 2016</h4>
+<ul>
+<li>Mission chez <em>Bouygues Immobilier</em> — conception et
+développement du module de gestion financière d’un ERP en
+<strong>architecture orientée services</strong> (<strong>C# / WPF /
+Service Bus</strong>)</li>
+<li>Optimisation des performances base de données : requêtes
+<strong>T-SQL</strong>, triggers et procédures stockées</li>
+</ul>
+</section>
+<hr>
+<section id="syd-conseilnantes" class="experience">
+<h3><span class="org">Syd Conseil</span><span class="meta">Nantes</span></h3>
+<h4 id="développeur-erp-dynamics-ax-janvier-2013-juillet-2014">Développeur
+ERP Dynamics AX · Janvier 2013 – Juillet 2014</h4>
+<ul>
+<li>Développement de modules métiers et de webservices (<strong>C# /
+WCF</strong>) pour l’intégration de l’ERP avec des équipements
+industriels via protocoles propriétaires (<strong>RS232</strong>)</li>
+</ul>
+</section>
+<h2 id="formation">Formation</h2>
+<h3 id="supinfo">Supinfo</h3>
+<p><strong>Diplôme:</strong> <em>Master of Science in Computer
+Science</em> | <strong>2007-2012</strong> | <strong>Nantes</strong></p>
+<script>
+(function () {
+  function applyTheme(t) {
+    if (t === 'dark' || t === 'light')
+      document.documentElement.setAttribute('data-theme', t);
+  }
+  // Apply stored theme before first paint
+  try { applyTheme(localStorage.getItem('resume-theme')); } catch (e) {}
+  // Listen for updates from the shell page
+  window.addEventListener('message', function (e) {
+    if (e.data && e.data.type === 'resume-theme') applyTheme(e.data.theme);
+  });
+})();
+</script>
+</body>
+</html>
