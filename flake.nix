@@ -19,33 +19,56 @@
 
         buildInputs = with pkgs; [
           pandoc
-          wkhtmltopdf-bin
+          chromium
+          fontconfig
         ];
 
         buildPhase = ''
-          pandoc resume.md \
+          pandoc resume_fr.md \
           -t html -f markdown \
           -c style.css --self-contained \
-          -o resume.html
+          -o resume_fr.html
 
-          wkhtmltopdf --enable-local-file-access \
-          resume.html \
-          resume.pdf
+          pandoc resume_en.md \
+          -t html -f markdown \
+          -c style.css --self-contained \
+          -o resume_en.html
+
+          export FONTCONFIG_FILE=${pkgs.fontconfig.out}/etc/fonts/fonts.conf
+
+          chromium --headless --no-sandbox --disable-gpu \
+          --disable-dbus --disable-dev-shm-usage \
+          --run-all-compositor-stages-before-draw \
+          --no-pdf-header-footer \
+          --print-to-pdf=resume_fr.pdf resume_fr.html
+
+          chromium --headless --no-sandbox --disable-gpu \
+          --disable-dbus --disable-dev-shm-usage \
+          --run-all-compositor-stages-before-draw \
+          --no-pdf-header-footer \
+          --print-to-pdf=resume_en.pdf resume_en.html
         '';
 
-      in with pkgs; {
+      in with pkgs; let
+        resumePkg = stdenvNoCC.mkDerivation {
+          inherit buildInputs buildPhase;
+          name = "resume_md";
+          src = ./.;
+          installPhase = ''
+            mkdir -p $out/resume
+            cp index.html $out/resume/
+            cp resume_fr.html resume_en.html $out/resume/
+            cp resume_fr.pdf  resume_en.pdf  $out/resume/
+          '';
+        };
+      in {
 
         packages = {
-          default = stdenvNoCC.mkDerivation {
-            inherit buildInputs buildPhase;
-            name = "resume_md";
-            src = ./.;
-            installPhase = ''
-              mkdir -p $out/resume
-              cp resume.* $out/resume/
-            '';
-          };
+          default = resumePkg;
         };
+
+        # Nix 2.6 compatibility: nix build resolves defaultPackage.${system}
+        defaultPackage = resumePkg;
 
         checks = {
           default = stdenvNoCC.mkDerivation {

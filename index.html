@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maxime Sauvaget — Ingénieur Logiciel Backend C# · .NET · Systèmes Distribués</title>
+
+  <!-- ── SEO ──────────────────────────────────────────────────────────── -->
+  <meta name="description" content="CV de Maxime Sauvaget, ingénieur logiciel backend avec 10+ ans d'expérience en C#, .NET, microservices et systèmes distribués. Spécialisé en architecture IIoT, edge computing, bases de données graphe et R&D technique. Basé à Montpellier." />
+  <meta name="keywords" content="Maxime Sauvaget, développeur backend, C# developer, .NET developer, ingénieur logiciel, microservices, systèmes distribués, IIoT, edge computing, graph database, Montpellier, backend engineer, software engineer" />
+  <meta name="author" content="Maxime Sauvaget" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://maximesauvaget.github.io/resume/" />
+
+  <!-- ── Open Graph (LinkedIn, Slack, etc.) ───────────────────────────── -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Maxime Sauvaget — Ingénieur Logiciel Backend C# · .NET · Systèmes Distribués" />
+  <meta property="og:description" content="CV de Maxime Sauvaget, ingénieur logiciel backend avec 10+ ans d'expérience en C#, .NET, microservices et systèmes distribués. Spécialisé en architecture IIoT, edge computing et R&D technique." />
+  <meta property="og:url" content="https://maximesauvaget.github.io/resume/" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="profile:first_name" content="Maxime" />
+  <meta property="profile:last_name" content="Sauvaget" />
+
+  <!-- ── Twitter / X Card ─────────────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Maxime Sauvaget — Backend Engineer C# · .NET" />
+  <meta name="twitter:description" content="10+ years of experience in C#, .NET, distributed systems, IIoT and edge computing." />
+
+  <!-- ── JSON-LD structured data (Person) ─────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Maxime Sauvaget",
+    "jobTitle": "Ingénieur Logiciel Backend",
+    "description": "Backend software engineer with 10+ years of experience in C#, .NET, distributed systems, IIoT platforms, edge computing and graph databases.",
+    "url": "https://maximesauvaget.github.io/resume/",
+    "email": "sauvaget.maxime@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Montpellier",
+      "addressCountry": "FR"
+    },
+    "knowsAbout": [
+      "C#", ".NET", "ASP.NET Core", "Microservices", "Distributed Systems",
+      "IIoT", "Edge Computing", "Graph Databases", "gRPC", "REST APIs",
+      "NestJS", "Docker", "Kubernetes", "RabbitMQ", "DSL Design", "R&D"
+    ],
+    "sameAs": [
+      "https://github.com/maximesauvaget"
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Design tokens (mirrors style.css) ─────────────────────────── */
+    :root {
+      --fg:      #0f172a;
+      --muted:   #475569;
+      --bg:      #ffffff;
+      --bg-alt:  #f8fafc;
+      --accent:  #2563eb;
+      --border:  #e2e8f0;
+      --header-h: 56px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg:     #e6edf3;
+        --muted:  #7d8590;
+        --bg:     #0d1117;
+        --bg-alt: #161b22;
+        --accent: #58a6ff;
+        --border: #30363d;
+      }
+    }
+
+    /* ── Reset / base ───────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter,
+                   Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+    }
+
+    /* ── Header ─────────────────────────────────────────────────────── */
+    header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: var(--header-h);
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      z-index: 100;
+    }
+
+    .site-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ── Language toggle ─────────────────────────────────────────────── */
+    .lang-toggle {
+      display: flex;
+      gap: 0.25rem;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.25rem;
+    }
+
+    .lang-toggle button {
+      appearance: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      padding: 0.3rem 0.85rem;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .lang-toggle button:hover {
+      color: var(--fg);
+    }
+
+    .lang-toggle button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* ── Contact button + dropdown ──────────────────────────────────── */
+    .contact-wrapper {
+      position: relative;
+      display: inline-flex;
+    }
+
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 1.1rem 0.3rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      color: var(--fg);
+      font-family: 'Caveat', cursive;
+      font-size: 1.125rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s, box-shadow 0.15s;
+    }
+
+    .contact-wrapper:hover .btn-contact,
+    .contact-wrapper:focus-within .btn-contact {
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 2px 12px color-mix(in srgb, var(--accent) 20%, transparent);
+    }
+
+    .btn-contact svg {
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    .contact-wrapper:hover .btn-contact svg {
+      transform: translateX(2px) rotate(-8deg);
+    }
+
+    .contact-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-4px);
+      min-width: 160px;
+      padding: 0.5rem 0.3rem 0.3rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--fg) 12%, transparent);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.15s, transform 0.15s;
+      z-index: 200;
+    }
+
+    /* tiny caret */
+    .contact-dropdown::before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 9px;
+      height: 9px;
+      background: var(--bg);
+      border-left: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-wrapper:hover .contact-dropdown,
+    .contact-wrapper:focus-within .contact-dropdown {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .contact-dropdown a {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 7px;
+      text-decoration: none;
+      color: var(--fg);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      transition: background 0.12s, color 0.12s;
+      white-space: nowrap;
+    }
+
+    .contact-dropdown a:hover {
+      background: var(--bg-alt);
+      color: var(--accent);
+    }
+
+    .contact-dropdown a.whatsapp:hover {
+      color: #25d366;
+    }
+
+    .contact-dropdown .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0.25rem 0.4rem;
+    }
+
+    /* ── Theme toggle button ───────────────────────────────────────── */
+    .btn-theme {
+      appearance: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0.3rem;
+      border-radius: 6px;
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      transition: color 0.15s;
+    }
+    .btn-theme:hover { color: var(--fg); }
+    .btn-theme .icon-sun  { display: none; }
+    .btn-theme .icon-moon { display: block; }
+    .btn-theme[data-effective="dark"] .icon-sun  { display: block; }
+    .btn-theme[data-effective="dark"] .icon-moon { display: none; }
+
+    /* ── Download button ─────────────────────────────────────────────── */
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--accent);
+      background: transparent;
+      color: var(--accent);
+      font: inherit;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+    }
+
+    .btn-download:hover {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 2px 10px color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+
+    .btn-download svg {
+      flex-shrink: 0;
+    }
+
+    /* ── Resume iframe ───────────────────────────────────────────────── */
+    #resume-frame {
+      display: block;
+      position: fixed;
+      inset: var(--header-h) 0 0 0;
+      width: 100%;
+      height: calc(100% - var(--header-h));
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="site-title">Maxime Sauvaget — CV</span>
+
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <button id="btn-theme" class="btn-theme" aria-label="Toggle theme" onclick="toggleTheme()">
+        <!-- moon: shown in light mode -->
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <!-- sun: shown in dark mode -->
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1"  x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22"  x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+
+      <div class="contact-wrapper">
+        <a class="btn-contact" href="mailto:sauvaget.maxime@gmail.com">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h10A1.5 1.5 0 0 1 14 3.5v8A1.5 1.5 0 0 1 12.5 13h-10A1.5 1.5 0 0 1 1 11.5v-8Zm1.5-.5a.5.5 0 0 0-.5.5l5.5 4 5.5-4a.5.5 0 0 0-.5-.5h-10Zm10 1.72-4.84 3.52a.5.5 0 0 1-.32.12.5.5 0 0 1-.32-.12L2.5 4.72V11.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4.72Z" fill="currentColor"/>
+          </svg>
+          get in touch
+        </a>
+
+        <div class="contact-dropdown" role="menu">
+          <a href="mailto:sauvaget.maxime@gmail.com" role="menuitem">
+            <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h10A1.5 1.5 0 0 1 14 3.5v8A1.5 1.5 0 0 1 12.5 13h-10A1.5 1.5 0 0 1 1 11.5v-8Zm1.5-.5a.5.5 0 0 0-.5.5l5.5 4 5.5-4a.5.5 0 0 0-.5-.5h-10Zm10 1.72-4.84 3.52a.5.5 0 0 1-.32.12.5.5 0 0 1-.32-.12L2.5 4.72V11.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4.72Z" fill="currentColor"/>
+            </svg>
+            Email
+          </a>
+          <div class="divider"></div>
+          <a class="whatsapp" href="#" data-wa="MzM2NDM0MzQyNzc=" target="_blank" rel="noopener" role="menuitem">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.004 22l4.978-1.413A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.524 2 12.001 2Zm0 18a7.958 7.958 0 0 1-4.073-1.117l-.292-.173-3.007.855.842-3.083-.19-.308A7.96 7.96 0 0 1 4 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8Zm4.39-5.966c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.013-.373-1.93-1.19-.713-.636-1.194-1.42-1.334-1.66-.14-.24-.015-.37.105-.49.109-.107.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.195-.468-.393-.404-.54-.412l-.46-.008c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.694 2.588 4.105 3.628.574.248 1.021.396 1.37.507.575.183 1.099.157 1.513.095.461-.069 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <a id="btn-download" class="btn-download" href="resume_fr.pdf" download>
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M7.5 1v9m0 0L4.5 7m3 3 3-3M2 13h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        PDF
+      </a>
+
+      <nav class="lang-toggle" aria-label="Language toggle">
+        <button id="btn-fr" class="active" onclick="setLang('fr')">FR</button>
+        <button id="btn-en"               onclick="setLang('en')">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <iframe
+    id="resume-frame"
+    src="resume_fr.html"
+    title="Resume"
+  ></iframe>
+
+  <script>
+    // ── Theme management ──────────────────────────────────────────────
+    let pinnedTheme = null;
+    try { pinnedTheme = localStorage.getItem('resume-theme'); } catch (e) {}
+
+    function effectiveTheme() {
+      return pinnedTheme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+
+    function pushTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      document.getElementById('btn-theme').dataset.effective = t;
+      try {
+        document.getElementById('resume-frame').contentWindow
+          .postMessage({ type: 'resume-theme', theme: t }, '*');
+      } catch (e) {}
+    }
+
+    function toggleTheme() {
+      pinnedTheme = effectiveTheme() === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('resume-theme', pinnedTheme); } catch (e) {}
+      pushTheme(pinnedTheme);
+    }
+
+    // Apply on load
+    pushTheme(effectiveTheme());
+
+    // Re-push theme each time the iframe (re)loads
+    document.getElementById('resume-frame').addEventListener('load', function () {
+      pushTheme(effectiveTheme());
+    });
+
+    // Follow system preference changes when not pinned
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () {
+      if (!pinnedTheme) pushTheme(effectiveTheme());
+    });
+
+    // ── Decode obfuscated WhatsApp number on hover (keeps number out of static HTML)
+    document.querySelectorAll('a[data-wa]').forEach(el => {
+      el.addEventListener('mouseenter', function () {
+        this.href = 'https://wa.me/' + atob(this.dataset.wa);
+      });
+    });
+
+    const pages = { fr: 'resume_fr.html', en: 'resume_en.html' };
+    const pdfs  = { fr: 'resume_fr.pdf',  en: 'resume_en.pdf'  };
+
+    function setLang(lang) {
+      document.getElementById('resume-frame').src = pages[lang];
+      document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-download').href = pdfs[lang];
+      document.documentElement.lang = lang;
+    }
+
+    // Restore last choice from session
+    const saved = sessionStorage.getItem('resume-lang');
+    if (saved && saved !== 'fr') setLang(saved);
+
+    document.querySelectorAll('.lang-toggle button').forEach(btn => {
+      btn.addEventListener('click', () =>
+        sessionStorage.setItem('resume-lang', btn.id.replace('btn-', ''))
+      );
+    });
+  </script>
+</body>
+</html>
