@@ -27,8 +27,10 @@ jobs:
           cp index.html output/index.html
           cp result/resume/resume_en.html output/resume_en.html
           cp result/resume/resume_fr.html output/resume_fr.html
-          cp result/resume/resume_en.pdf output/resume_en.pdf
-          cp result/resume/resume_fr.pdf output/resume_fr.pdf
+          cp result/resume/maxime_sauvaget_resume_en.pdf output/maxime_sauvaget_resume_en.pdf
+          cp result/resume/maxime_sauvaget_resume_fr.pdf output/maxime_sauvaget_resume_fr.pdf
+          cp robots.txt output/robots.txt
+          cp sitemap.xml output/sitemap.xml
 
       #
       # --- Deployment Logic ---
@@ -50,8 +52,8 @@ jobs:
           cp output/index.html deploy/$BRANCH_NAME/index.html
           cp output/resume_en.html deploy/$BRANCH_NAME/resume_en.html
           cp output/resume_fr.html deploy/$BRANCH_NAME/resume_fr.html
-          cp output/resume_en.pdf deploy/$BRANCH_NAME/resume_en.pdf
-          cp output/resume_fr.pdf deploy/$BRANCH_NAME/resume_fr.pdf
+          cp output/maxime_sauvaget_resume_en.pdf deploy/$BRANCH_NAME/maxime_sauvaget_resume_en.pdf
+          cp output/maxime_sauvaget_resume_fr.pdf deploy/$BRANCH_NAME/maxime_sauvaget_resume_fr.pdf
         # Publish the folder
       - name: Publish branch folder
         if: github.ref != 'refs/heads/master'
