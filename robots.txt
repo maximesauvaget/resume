@@ -1,11 +1,11 @@
 User-agent: *
+Allow: /sitemap.xml
 Allow: /resume/$
 Allow: /resume/index.html
 Allow: /resume/resume_en.html
 Allow: /resume/resume_fr.html
 Allow: /resume/maxime_sauvaget_resume_en.pdf
 Allow: /resume/maxime_sauvaget_resume_fr.pdf
-Allow: /resume/sitemap.xml
 Disallow: /resume/
 
-Sitemap: https://maximesauvaget.github.io/resume/sitemap.xml
+Sitemap: https://maximesauvaget.github.io/sitemap.xml
