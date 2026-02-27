@@ -29,8 +29,6 @@ jobs:
           cp result/resume/resume_fr.html output/resume_fr.html
           cp result/resume/maxime_sauvaget_resume_en.pdf output/maxime_sauvaget_resume_en.pdf
           cp result/resume/maxime_sauvaget_resume_fr.pdf output/maxime_sauvaget_resume_fr.pdf
-          cp robots.txt output/robots.txt
-          cp sitemap.xml output/sitemap.xml
 
       #
       # --- Deployment Logic ---

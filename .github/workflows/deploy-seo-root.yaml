@@ -1,0 +1,35 @@
+name: Deploy SEO files to domain root
+
+on:
+  workflow_dispatch:   # manual trigger only
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout resume repo (master)
+        uses: actions/checkout@v3
+        with:
+          ref: master
+
+      - name: Checkout maximesauvaget.github.io repo
+        uses: actions/checkout@v3
+        with:
+          repository: maximesauvaget/maximesauvaget.github.io
+          token: ${{ secrets.GH_PAGES_ROOT_PAT }}
+          path: gh-pages-root
+
+      - name: Copy robots.txt and sitemap.xml to root
+        run: |
+          cp robots.txt gh-pages-root/robots.txt
+          cp sitemap.xml gh-pages-root/sitemap.xml
+
+      - name: Commit and push
+        working-directory: gh-pages-root
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add robots.txt sitemap.xml
+          git diff --cached --quiet || git commit -m "chore: update robots.txt and sitemap.xml from resume repo"
+          git push
