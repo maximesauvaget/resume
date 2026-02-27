@@ -11,6 +11,7 @@
   <meta name="author" content="Maxime Sauvaget" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://maximesauvaget.github.io/resume/" />
+  <link rel="sitemap" type="application/xml" href="https://maximesauvaget.github.io/resume/sitemap.xml" />
 
   <!-- ── Open Graph (LinkedIn, Slack, etc.) ───────────────────────────── -->
   <meta property="og:type" content="profile" />
@@ -66,6 +67,18 @@
       --border:  #e2e8f0;
       --header-h: 56px;
     }
+    @media (max-width: 600px) {
+      .site-title {
+        display: none;
+      }
+      .btn-contact {
+        padding: 0.35rem 0.6rem 0.3rem;
+      }
+      .btn-contact-label {
+        display: none;
+      }
+    }
+
     @media (prefers-color-scheme: dark) {
       :root {
         --fg:     #e6edf3;
@@ -340,7 +353,7 @@
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h10A1.5 1.5 0 0 1 14 3.5v8A1.5 1.5 0 0 1 12.5 13h-10A1.5 1.5 0 0 1 1 11.5v-8Zm1.5-.5a.5.5 0 0 0-.5.5l5.5 4 5.5-4a.5.5 0 0 0-.5-.5h-10Zm10 1.72-4.84 3.52a.5.5 0 0 1-.32.12.5.5 0 0 1-.32-.12L2.5 4.72V11.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4.72Z" fill="currentColor"/>
           </svg>
-          get in touch
+          <span class="btn-contact-label">get in touch</span>
         </a>
 
         <div class="contact-dropdown" role="menu">
@@ -360,7 +373,7 @@
         </div>
       </div>
 
-      <a id="btn-download" class="btn-download" href="resume_fr.pdf" download>
+      <a id="btn-download" class="btn-download" href="maxime_sauvaget_resume_fr.pdf" download>
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M7.5 1v9m0 0L4.5 7m3 3 3-3M2 13h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -426,7 +439,7 @@
     });
 
     const pages = { fr: 'resume_fr.html', en: 'resume_en.html' };
-    const pdfs  = { fr: 'resume_fr.pdf',  en: 'resume_en.pdf'  };
+    const pdfs  = { fr: 'maxime_sauvaget_resume_fr.pdf',  en: 'maxime_sauvaget_resume_en.pdf'  };
 
     function setLang(lang) {
       document.getElementById('resume-frame').src = pages[lang];
