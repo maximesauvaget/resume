@@ -9,12 +9,12 @@ jobs:
 
     steps:
       - name: Checkout resume repo (master)
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: master
 
       - name: Checkout maximesauvaget.github.io repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: maximesauvaget/maximesauvaget.github.io
           token: ${{ secrets.GH_PAGES_ROOT_PAT }}
